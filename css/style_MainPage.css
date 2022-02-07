@@ -117,7 +117,7 @@ a{
 .Nav1 > ul{
     border-top: 4px solid white;
     border-bottom: 4px solid white;
-    width: 100px;
+    width: 115px;
     height: 20px;
     position: relative;
     position: fixed;
@@ -126,7 +126,7 @@ a{
 .Nav1 > ul > li{
     border: 2px solid white;
     background-color: rgba(100, 100, 100, .7);
-    width: 100px;
+    width: 115px;
     height: 60px;
     line-height: 60px;
     position: absolute;
