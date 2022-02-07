@@ -379,6 +379,7 @@ footer{
     flex-direction: column;
     /* margin-left: auto; */
     justify-content: space-between;
+    text-align: right;
 }
 
 iframe{
