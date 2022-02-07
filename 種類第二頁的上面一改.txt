@@ -1,0 +1,77 @@
+
+    <div class="Top">
+
+        <div class="Logo"> <!--LOGO-->
+        <!-- <div class="Logo_InTheVideo"></div> -->
+            <h1>CYC TATTOO STUDIO.INK</h1>
+            <img src="./img/Resources/CYC_Logo-1.png" alt="">
+            <a href="#"></a>
+        </div>
+
+        <div class="Nav"> <!--漢堡選單-->
+            <ul>
+                <li><a href="#"> Category </a></li>
+                <li><a href="#"> About Us </a></li>
+                <li><a href="#"> Artists </a></li>
+                <li><a href="#"> Case Studies </a></li>
+                <li><a href="#"> Accessories </a></li>
+                <li><a href="#"> Appointment </a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="Wrapper"> <!-- 中間這一趴 -->
+
+        <div class="ColumnBlock1">
+            <div class="ColumnItem1">
+                <a href="#">
+                <h2>日式傳統<br>Traditional</h2>
+                </a>
+            </div>
+
+            <div class="ColumnItem2">
+                <a href="#">
+                <h2>寫實<br>Black and Grey</h2>
+                </a>
+            </div>
+
+            <div class="ColumnItem3">
+                <a href="#">
+                <h2>美式傳統<br>Oldschool</h2>
+                </a>
+            </div>
+
+            <div class="ColumnItem4">
+                <a href="#">
+                <h2>草寫<br>Font</h2>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="ColumnBlock2">
+            <div class="ColumnItem2-1">
+                <a href="#">
+                <img src="./img/Resources/7-1.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="ColumnItem2-2">
+                <a href="#">
+                <img src="./img/Resources/7-3.jpg" alt="">
+                </a>
+            </div>
+
+        </div>
+
+
+    <footer> <!-- Footer -->
+        <h2> Contact Us </h2>
+        
+        
+    </footer>
+
+
+
+    </div>

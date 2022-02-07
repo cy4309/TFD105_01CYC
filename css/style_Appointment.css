@@ -1,0 +1,289 @@
+@import url(./reset.css);
+
+*{
+    box-sizing: border-box;
+}
+
+/* ================================================== Model ================================================== */
+
+body{
+    background-color: black;
+    font-family: impact, 'Noto Serif JP', serif;
+    font-size: 18px;
+    color: white;
+}
+
+.Wrapper{
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin: 0 auto;
+}
+
+iframe{
+    /* -webkit-filter:grayscale(1); */
+    filter:grayscale(1);
+}
+
+iframe:hover{
+    /* -webkit-filter:grayscale(0); */
+    filter:grayscale(0);
+}
+
+h1{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 64px;
+}
+
+h3{
+    font-size: 36px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* =============================================== TopLogo ================================================== */
+
+/* 灰背 */
+.Top{
+    background-image: url(../img/Resources/9-3-2.png);
+    width: 100%;
+    height: 114px;
+    background-color: #3B3B3B;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* ---------------------------------------- LOGO ---------------------------------------- */
+/* LOGO圖 */
+
+.Logo_Image, .Logo_Text{
+    float: left;
+}
+
+.Logo_Image > a > img{
+    width: 150px;
+}
+
+
+/* ---------------------------------------- HamList ---------------------------------------- */
+
+/* 導覽文字 */
+.Nav0{
+    margin-left: 52%;
+}
+
+.Nav1{
+    margin-left: auto;
+    position: fixed;
+    z-index: 50;
+}
+
+/* 導覽線 */
+.Nav1 > ul{
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    top: -10px;
+    left: 1060px;
+}
+
+.Nav1 > ul > li{
+    border: 2px solid white;
+    background-color: rgba(100, 100, 100, .7);
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+
+    display: none;
+}
+
+.Nav1 > ul >li:nth-child(2){
+    top: 60px;
+}
+
+.Nav1 > ul >li:nth-child(3){
+    top: 120px;
+}
+
+.Nav1 > ul >li:nth-child(4){
+    top: 180px;
+}
+
+.Nav1 > ul >li:nth-child(5){
+    top: 240px;
+}
+
+.Nav1 > ul >li:nth-child(6){
+    top: 300px;
+}
+
+.Nav1 > ul > li > a{
+    display: block;
+    width: 100px;
+    height: 60px;
+}
+
+/* ---------------------------------------- HamList_hover ---------------------------------------- */
+.Nav1 > ul:hover li{
+    display: block;
+}
+
+.Nav1 > ul > li:hover{
+    background-color: rgba(50, 50, 50, .7);
+}
+
+
+/* ================================================== ColumnBlock6 ================================================== */
+.ColumnBlock6{
+    background-image: url(../img/Resources/14-1.png);
+    width: 100%;
+    height: 1070px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ColumnItem9{
+    width: 800px;
+    height: 800px;
+    background-color: rgb(100, 100, 100, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Table{
+    width: 600px;
+    height: 600px;
+    background-color: rgb(100, 100, 100, .5);
+    border: 7px solid black;
+    padding: 20px;
+}
+
+.Table > ul{
+    text-align: center;
+}
+
+.Table > ul > li{
+    padding: 10px;
+}
+
+/* .Name{} */
+
+/* .ChooseArtists{} */
+
+/* .Date{} */
+
+/* .Phone{} */
+
+/* .Subscribe{} */
+
+.Suggestion textarea{
+    width: 300px;
+    height: 50px;
+}
+
+/* .Upload{} */
+
+/* .Send{} */
+
+
+/* ================================================== footer ================================================== */
+
+footer{
+    background-image: url(../img/Resources/9-3-2.png);
+    background-color: #3B3B3B;
+    width: 100%;
+    height: 710px;
+    padding: 90px 20px;
+    margin-top: 20px;
+}
+
+/* ---------------------------------------- Footer1 ---------------------------------------- */
+
+.Footer1{
+    width: 100%;
+    display: flex;
+    /* align-content: center; */
+    align-items: center;
+}
+
+.Footer1 > h2{
+    flex-grow: 1;
+}
+
+.Footer1 > .Line1{
+    width: 100px;
+    height: 8px;
+    background-color: white;
+    flex-grow: 1;
+}
+
+.Footer1 > p{
+    flex-grow: 1;
+}
+
+.Footer > h3{
+    flex-grow: 1;
+}
+
+/* ---------------------------------------- Footer2 ---------------------------------------- */
+
+.Footer2{
+    float: left;
+}
+
+.Nav2{
+    /* border: 1px solid pink; */
+    /* width: 430px; */
+    height: 250px;
+    display: flex;
+    margin: 100px 0;
+    margin-left: 220px;
+    margin-right: 40px;
+}
+
+.Nav2 > ul{
+    /* width: 430px;
+    height: 360px; */
+    display: flex;
+    flex-direction: column;
+    /* margin-left: auto; */
+    justify-content: space-between;
+}
+
+iframe{
+    width: 585px;
+    height: 360px;
+    margin: 50px 0;
+}
+
+/* ---------------------------------------- Footer3 ---------------------------------------- */
+.Footer3{
+    height: 90px;
+    /* border: 1px solid blue; */
+}
+
+
+.Footer3 > .Line2{
+    width: 100%;
+    height: 8px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.Footer3 > p{
+    font-size: 10px;
+    text-align: center;
+}

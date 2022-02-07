@@ -1,0 +1,407 @@
+@import url('reset.css');
+
+*{
+    box-sizing: border-box;
+}
+
+/* ================================================== Model ================================================== */
+
+body{
+    background-color: black;
+    font-family: impact, 'Noto Serif JP', serif;
+    font-size: 18px;
+    color: white;
+}
+
+.Wrapper{
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin: 0 auto;
+}
+
+img, iframe{
+    /* -webkit-filter:grayscale(1); */
+    filter:grayscale(1);
+}
+
+img:hover, iframe:hover{
+    /* -webkit-filter:grayscale(0); */
+    filter:grayscale(0);
+}
+
+h1{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 64px;
+}
+
+h3{
+    font-size: 36px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* ================================================== Video1 ================================================== */
+
+.VideoBlock1{
+    /* border: 1px solid yellow; */
+    width: 1280px;
+    overflow: hidden;
+    object-fit: cover;
+    max-width: 100%;
+    /* transform: translate(-50%); */
+    position: relative;
+    margin-bottom: 100px;
+    margin: 0 auto;
+}
+
+/* ---------------------------------------- LOGO ---------------------------------------- */
+
+/* .Logo_InTheVideo{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+} */
+
+.Logo > h1{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 538px;
+    right: 0;
+    top: 272px;
+    bottom: 0;
+    /* margin: auto; */
+}
+
+.Logo > img{
+    width: 200px;
+    position: absolute;
+    left: 530px;
+    right: 0;
+    top: 300px;
+    bottom: 0;
+    /* margin: auto; */
+}
+
+.Logo > a{
+    display: block;
+    width: 200px;
+    height: 130px;
+    position: absolute;
+    left: 530px;
+    right: 0;
+    top: 270px;
+    bottom: 0;
+    /* border: 3px solid blue; */
+}
+
+/* ---------------------------------------- HamList ---------------------------------------- */
+
+.Nav1{
+    position: absolute;
+    top: 30px;
+    left: 1120px;
+    bottom: 0;
+    right: 0;
+    z-index: 50;
+}
+
+/* 導覽線 */
+.Nav1 > ul{
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    width: 100px;
+    height: 20px;
+    position: relative;
+    position: fixed;
+}
+
+.Nav1 > ul > li{
+    border: 2px solid white;
+    background-color: rgba(100, 100, 100, .7);
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+
+    display: none;
+}
+
+.Nav1 > ul >li:nth-child(2){
+    top: 60px;
+}
+
+.Nav1 > ul >li:nth-child(3){
+    top: 120px;
+}
+
+.Nav1 > ul >li:nth-child(4){
+    top: 180px;
+}
+
+.Nav1 > ul >li:nth-child(5){
+    top: 240px;
+}
+
+.Nav1 > ul >li:nth-child(6){
+    top: 300px;
+}
+
+.Nav1 > ul > li > a{
+    display: block;
+    width: 100px;
+    height: 60px;
+}
+
+/* ---------------------------------------- HamList_hover ---------------------------------------- */
+.Nav1 > ul:hover li{
+    display: block;
+}
+
+.Nav1 > ul > li:hover{
+    background-color: rgba(50, 50, 50, .7);
+}
+
+
+
+/* ============================================= Arms ============================================= */
+
+.MainPage{
+    /* border: 1px solid orange; */
+    /* height: 100vh; */
+    width: 100%; 
+}
+
+/* ---------------------------------------- ColumnBlock7 ---------------------------------------- */
+/* .ColumnBlock7{} */
+
+/* .ColumnItem10{} */
+
+
+
+
+/* ============================================= Brief/ Artists ============================================= */
+
+/* ---------------------------------------- ColumnBlock8, 9, 10 ---------------------------------------- */
+.ColumnBlock8, .ColumnBlock9, .ColumnBlock10{
+    margin: 100px 0;
+}
+
+
+/* ---------------------------------------- ColumnBlock8 ---------------------------------------- */
+/* .ColumnBlock8{} */
+
+.ColumnBlock8 > ul> li > .Line3{
+    width: 360px;
+    height: 8px;
+    background-color: white;
+}
+
+.ColumnBlock8 > ul{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.ColumnBlock8 > ul > li{
+    width: 360px;
+    padding: 15px 0;
+}
+
+
+/* ================================================== Button ================================================== */
+
+button{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(100, 100, 100, 0.5);
+    display: inline-block;
+    font-family: impact, 'Noto Serif JP', serif;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button > h3 {
+    font-size: 30px;
+}
+
+.ColumnBlock9 > ul > li:nth-child(11) > button > h3,
+.ColumnBlock10 > ul > li:nth-child(11) > button > h3{
+    font-size: 48px;
+}
+
+.ColumnBlock9 > ul > li:nth-child(11){
+    width: 1080px;
+}
+
+.ColumnBlock10 > ul > li:nth-child(11){
+    width: 720px;
+}
+
+/* .Button > a{
+    width: 100%;
+} */
+
+/* ---------------------------------------- Button_hover ---------------------------------------- */
+button:hover{
+    background-color: rgb(100, 100, 100, .3);
+    transition-duration: .4s;
+    letter-spacing: .1em;
+    width: 100%;
+}
+
+
+/* ---------------------------------------- ColumnBlock9 ---------------------------------------- */
+/* .ColumnBlock9{} */
+
+.ColumnBlock9 > ul> li > .Line3{
+    width: 360px;
+    height: 8px;
+    background-color: white;
+}
+
+.ColumnBlock9 > ul{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.ColumnBlock9 > ul > li{
+    width: 360px;
+    padding: 15px 0;
+}
+
+.ColumnBlock9 > ul > li > img{
+    width: 360px;
+}
+
+/* ---------------------------------------- ColumnBlock10 ---------------------------------------- */
+/* .ColumnBlock10{} */
+
+.ColumnBlock10 > ul> li > .Line3{
+    width: 360px;
+    height: 8px;
+    background-color: white;
+}
+
+.ColumnBlock10 > ul{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.ColumnBlock10 > ul > li{
+    padding: 15px 0;
+}
+
+.ColumnBlock10 > ul > li > img{
+    width: 100%;
+}
+
+.ColumnBlock10 > ul > li > p{
+    width: 640px;
+}
+
+
+/* ================================================== footer ================================================== */
+
+footer{
+    background-image: url(../img/Resources/9-3-2.png);
+    background-color: #3B3B3B;
+    width: 100%;
+    height: 710px;
+    padding: 90px 20px;
+    margin-top: 20px;
+}
+
+/* ---------------------------------------- Footer1 ---------------------------------------- */
+
+.Footer1{
+    width: 100%;
+    display: flex;
+    /* align-content: center; */
+    align-items: center;
+}
+
+.Footer1 > h2{
+    flex-grow: 1;
+}
+
+.Footer1 > .Line1{
+    width: 100px;
+    height: 8px;
+    background-color: white;
+    flex-grow: 1;
+}
+
+.Footer1 > p{
+    flex-grow: 1;
+}
+
+.Footer > h3{
+    flex-grow: 1;
+}
+
+/* ---------------------------------------- Footer2 ---------------------------------------- */
+
+.Footer2{
+    float: left;
+}
+
+.Nav2{
+    /* border: 1px solid pink; */
+    /* width: 430px; */
+    height: 250px;
+    display: flex;
+    margin: 100px 0;
+    margin-left: 220px;
+    margin-right: 40px;
+}
+
+.Nav2 > ul{
+    /* width: 430px;
+    height: 360px; */
+    display: flex;
+    flex-direction: column;
+    /* margin-left: auto; */
+    justify-content: space-between;
+}
+
+iframe{
+    width: 585px;
+    height: 360px;
+    margin: 50px 0;
+}
+
+/* ---------------------------------------- Footer3 ---------------------------------------- */
+.Footer3{
+    height: 90px;
+    /* border: 1px solid blue; */
+}
+
+
+.Footer3 > .Line2{
+    width: 100%;
+    height: 8px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.Footer3 > p{
+    font-size: 10px;
+    text-align: center;
+}

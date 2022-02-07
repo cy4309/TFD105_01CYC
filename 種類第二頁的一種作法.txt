@@ -1,0 +1,198 @@
+ <div class="Wrapper">
+
+        <div class="ColumnBlock">
+            <div class="ColumnItem1">
+                <a href="#"></a>
+                <p>日式傳統<br>Traditional</p>
+                <img src="./img/Traditional/4-2.jpg" alt="">
+            </div>
+
+            <div class="ColumnItem2">
+                <a href="#"></a>
+                <p>寫實<br>Black and Grey</p>
+                <img src="./img/BlackandGrey/4-2.jpg" alt="">
+            </div>
+
+            <div class="ColumnItem3">
+                <a href="#"></a>
+                <p>美式傳統<br>Oldschool</p>
+                <img src="./img/Oldschool/4-2.jpg" alt="">
+            </div>
+
+            <div class="ColumnItem4">
+                <a href="#"></a>
+                <p>草寫<br>Font</p>
+                <img src="./img/Font/5-2.jpg" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+/* ================================================== Category ================================================== */
+
+.ColumnBlock{
+    border: 1px solid pink;
+    padding: 20px;
+
+    column-count: 2;
+    column-gap: 20px;
+    /* display: inline-block; */
+}
+
+/* ---------------------------------------- Column1 ---------------------------------------- */
+
+.ColumnItem1{
+    border: 1px solid blue;
+    margin-bottom: 20px;
+
+
+    display: inline-block;
+    width: 610px;
+    height: 660px;
+    position: relative;
+}
+
+.ColumnItem1 a{
+    border: 1px solid green;
+    display: block;
+    width: 290px;
+    height: 130px;
+    position: absolute;
+    left: 20px;
+    top: 820px;
+    z-index: 1;
+}
+
+.ColumnItem1 p{
+    color: white;
+    font-size: 64px;
+    position: absolute;
+    left: 20px;
+    top: 820px;
+}
+
+.ColumnItem1 img{
+    width: 610px;
+    height: 660px;
+}
+
+/* ---------------------------------------- Column2 ---------------------------------------- */
+
+.ColumnItem2{
+    border: 1px solid blue;
+    margin-bottom: 20px;
+
+
+    display: inline-block;
+    width: 610px;
+    height: 710px;
+    position: relative;
+}
+
+.ColumnItem2 a{
+    /* border: 1px solid green; */
+    display: block;
+    width: 390px;
+    height: 130px;
+    position: absolute;
+    top: 580px;
+    left: 20px;
+    z-index: 1;
+}
+
+.ColumnItem2 p{
+    color: white;
+    font-size: 64px;
+    position: absolute;
+    top: 580px;
+    left: 20px;
+}
+
+.ColumnItem2 img{
+    width: 610px;
+    height: 710px;
+}
+
+/* ---------------------------------------- Column3 ---------------------------------------- */
+
+.ColumnItem3{
+    border: 1px solid blue;
+    margin-top: 100px;
+    margin-bottom: 20px;
+
+
+    display: inline-block;
+    width: 450px;
+    height: 800px;
+    position: relative;
+}
+
+.ColumnItem3 a{
+    /* border: 1px solid green; */
+    display: block;
+    width: 390px;
+    height: 130px;
+    position: absolute;
+    top: 580px;
+    left: 20px;
+    z-index: 1;
+}
+
+.ColumnItem3 p{
+    color: white;
+    font-size: 64px;
+    position: absolute;
+    top: 580px;
+    left: 20px;
+}
+
+.ColumnItem3 img{
+    width: 450px;
+    height: 800px;
+}
+
+/* ---------------------------------------- Column4 ---------------------------------------- */
+
+.ColumnItem4{
+    border: 1px solid blue;
+    margin-bottom: 20px;
+
+
+    display: inline-block;
+    width: 450px;
+    height: 450px;
+    position: relative;
+}
+
+.ColumnItem4 a{
+    /* border: 1px solid green; */
+    display: block;
+    width: 390px;
+    height: 130px;
+    position: absolute;
+    top: 580px;
+    left: 20px;
+    z-index: 1;
+}
+
+.ColumnItem4 p{
+    color: white;
+    font-size: 64px;
+    position: absolute;
+    top: 580px;
+    left: 20px;
+}
+
+.ColumnItem4 img{
+    width: 450px;
+    height: 450px;
+}
