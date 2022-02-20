@@ -1,0 +1,50 @@
+
+@import url('reset.css');
+
+*{
+    box-sizing: border-box;
+}
+
+/* ================================================== Model ================================================== */
+
+body{
+    background-color: black;
+    font-family: impact, 'Noto Serif JP', serif;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.Wrapper{
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin: 0 auto;
+}
+
+img, iframe, .ColumnItem1, .ColumnItem2, .ColumnItem3, .ColumnItem4, .ColumnItem5, .ColumnItem6, .ColumnItem7, .ColumnItem8{
+    /* -webkit-filter:grayscale(1); */
+    filter:grayscale(1);
+}
+
+img:hover, iframe:hover, .ColumnItem1:hover, .ColumnItem2:hover, .ColumnItem3:hover, .ColumnItem4:hover, .ColumnItem5:hover, .ColumnItem6:hover, .ColumnItem7:hover, .ColumnItem8:hover{
+    /* -webkit-filter:grayscale(0); */
+    filter:grayscale(0);
+}
+
+h1{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 64px;
+}
+
+h3{
+    font-size: 36px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}

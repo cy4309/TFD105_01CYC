@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test2_changePhotos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <style>
+        body {
+            background: #4F4F4F;
+            color: white;
+            font-family: 'Oswald', sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        h3 {
+            font-weight: 400;
+            color: #F2C94C;
+        }
+
+        h1,
+        h3 {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 42px;
+            height: 39px;
+            margin: 0px 20px;
+        }
+
+        .ticket {
+            position: relative;
+            height: 410px;
+            width: 690px;
+            background: black;
+            display: flex;
+            align-items: flex-end;
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, .4);
+        }
+
+        .flight-info {
+            position: relative;
+            z-index: 99;
+            padding: 30px;
+        }
+
+        .flight-locations {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: -20px;
+        }
+
+        canvas {
+            position: absolute;
+            border-radius: 6px;
+            z-index: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            background: rgba(0, 0, 0, .2);
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="ticket">
+        <div class="overlay"></div>
+        <div class="flight-info">
+            <h3>JUNE 30 2018 12:30PM</h3>
+            <div class="flight-locations">
+                <h1>LAX</h1>
+                <img src="https://cdn-images-1.medium.com/max/800/1*QFU_XYAKOGJ9nunfqvem1w.png" />
+                <h1>JFK</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://cdn.rawgit.com/robin-dela/hover-effect/master/js/hover.min.js"></script>
+    <script>
+        new hoverEffect({
+            parent: document.querySelector('.ticket'),
+            intensity1: 0.1,
+            intensity2: 0.1,
+            angle2: Math.PI / 2,
+            image1: 'https://upload.wikimedia.org/wikipedia/commons/1/1b/%E8%94%A1%E8%8B%B1%E6%96%87%E5%AE%98%E6%96%B9%E5%85%83%E9%A6%96%E8%82%96%E5%83%8F%E7%85%A7.png',
+            image2: 'https://image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fstorage.googleapis.com%2Fwww-cw-com-tw%2Farticle%2F201903%2Farticle-5c80efc542af5.jpg/?w=1600&format=webp',
+            displacementImage: 'https://raw.githubusercontent.com/robin-dela/hover-effect/ca59bfa67fe75a331e2a04452f7b02f1671fdaa0/images/stripe1mul.png'
+        });
+    </script>
+</body>
+
+</html>

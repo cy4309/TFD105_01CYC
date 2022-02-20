@@ -1,7 +1,7 @@
 
-/* ================================================== Video2 ================================================== */
+/* ================================================== Video1 ================================================== */
 
-.VideoBlock2{
+.VideoBlock1{
     /* border: 1px solid yellow; */
     width: 1280px;
     overflow: hidden;
@@ -9,14 +9,13 @@
     max-width: 100%;
     /* transform: translate(-50%); */
     position: relative;
+    margin-bottom: 100px;
     margin: 0 auto;
-    margin-bottom: 20px;
     padding-top: calc(100% * 9 / 16);
-    /* display: flex;
-    justify-content: center; */
+    /* height: 100vh; */
 }
 
-.VideoBlock2 > video{
+.VideoBlock1 > video{
     height: 100%;
     width: 100%;
     position: absolute;
@@ -36,55 +35,30 @@
     font-size: 20px;
     color: white;
     position: absolute;
-    /* left: 538px; */
-    /* top: 272px; */
-    left: 50%;
-    top: 38%;
-    transform: translateX(-50%);
+    left: 538px;
+    top: 272px;
     /* margin: auto; */
 }
 
 .Logo > img{
     width: 200px;
     position: absolute;
-    /* left: 530px; */
-    /* top: 300px; */
-    left: 42%;
-    top: 42%;
+    left: 530px;
+    top: 300px;
     /* margin: auto; */
 }
 
 .Logo > a{
     display: block;
-    width: 220px;
+    width: 200px;
     height: 130px;
     position: absolute;
-    /* left: 530px; */
-    /* top: 270px; */
-    left: 41%;
-    top: 38%;
+    left: 530px;
+    top: 270px;
     /* border: 3px solid blue; */
 }
 
 /* ---------------------------------------- HamList ---------------------------------------- */
-
-.Nav0{
-    height: 250px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    /* left: 30px; */
-    /* left: 1.5%; */
-}
-
-.Nav0 > p{
-    /* font-size: 190px; */
-    font-size: 10.5em;
-    text-decoration: underline;
-    opacity: 60%;
-    transform: translateX(-17%);
-}
 
 .Nav1{
     position: absolute;
@@ -97,6 +71,7 @@
 
 /* 導覽線 */
 .Nav1 > ul{
+    /* border: 2px solid white; */
     border-top: 2px solid rgb(255, 255, 255, .3);
     border-bottom: 2px solid rgb(255, 255, 255, .3);
     width: 125px;
@@ -113,7 +88,7 @@
     line-height: 60px;
     text-align: right;
     padding-left: 5px;
-    position: absolute;
+    /* position: absolute; */
 
     display: none;
 }
@@ -153,63 +128,165 @@
     background-color: rgba(50, 50, 50, .7);
 }
 
+
+
+/* ============================================= Arms ============================================= */
+
+.MainPage{
+    /* border: 1px solid orange; */
+    /* height: 100vh; */
+    width: 100%; 
+}
+
+.js-slide{
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.js-slide-i{
+    transform: translateX(-70%);
+}
+
+.js-active {
+    transform: translate(0);
+    opacity: 1;
+}
+
+/* ---------------------------------------- ColumnBlock7 ---------------------------------------- */
+/* .ColumnBlock7{} */
+
+/* .ColumnItem10{} */
+
+
+
+
+/* ============================================= Brief/ Artists ============================================= */
+
+/* ---------------------------------------- ColumnBlock8, 9, 10 ---------------------------------------- */
+.ColumnBlock8, .ColumnBlock9, .ColumnBlock10{
+    margin: 100px 0;
+}
+
+
+/* ---------------------------------------- ColumnBlock8 ---------------------------------------- */
+/* .ColumnBlock8{} */
+
+.ColumnBlock8 > ul> li > .Line3{
+    width: 360px;
+    height: 8px;
+    background-color: white;
+}
+
+.ColumnBlock8 > ul{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.ColumnBlock8 > ul > li{
+    width: 360px;
+    padding: 15px 0;
+}
+
+
 /* ================================================== Button ================================================== */
+
 button{
     width: 100%;
     height: 100px;
     background-color: rgba(100, 100, 100, 0.5);
-    /* display: inline-block; */
+    display: inline-block;
     font-family: impact, 'Noto Serif JP', serif;
     color: white;
     cursor: pointer;
     margin-bottom: 20px;
 }
 
-.Button > a{
-    width: 100%;
+button > h3 {
+    font-size: 30px;
 }
+
+.ColumnBlock9 > ul > li:nth-child(11) > button > h3,
+.ColumnBlock10 > ul > li:nth-child(11) > button > h3{
+    font-size: 48px;
+}
+
+.ColumnBlock9 > ul > li:nth-child(11){
+    width: 1080px;
+}
+
+.ColumnBlock10 > ul > li:nth-child(11){
+    width: 720px;
+}
+
+/* .Button > a{
+    width: 100%;
+} */
 
 /* ---------------------------------------- Button_hover ---------------------------------------- */
 button:hover{
     background-color: rgb(100, 100, 100, .3);
     transition-duration: .4s;
     letter-spacing: .1em;
-}
-
-
-/* ================================================== ColumnBlock3 ================================================== */
-.ColumnBlock3{
     width: 100%;
 }
 
-/* ---------------------------------------- Column5 ---------------------------------------- */
 
-.ColumnItem5{
-    width: 100%;
+/* ---------------------------------------- ColumnBlock9 ---------------------------------------- */
+/* .ColumnBlock9{} */
+
+.ColumnBlock9 > ul> li > .Line3{
+    width: 360px;
+    height: 8px;
+    background-color: white;
+}
+
+.ColumnBlock9 > ul{
+    text-align: center;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    /* border: 1px solid blue; */
+    justify-content: center;
 }
 
-.ColumnItem5 > p{
-    padding: 50px;
-    line-height: 1.3;
+.ColumnBlock9 > ul > li{
+    width: 360px;
+    padding: 15px 0;
 }
 
-/* ---------------------------------------- Column6 ---------------------------------------- */
+.ColumnBlock9 > ul > li > img{
+    width: 360px;
+}
 
-.ColumnItem6{
-    width: 100%;
+/* ---------------------------------------- ColumnBlock10 ---------------------------------------- */
+/* .ColumnBlock10{} */
+
+.ColumnBlock10 > ul> li > .Line3{
+    width: 360px;
+    height: 8px;
+    background-color: white;
+}
+
+.ColumnBlock10 > ul{
+    text-align: center;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    /* border: 1px solid blue; */
+    justify-content: center;
 }
 
-.ColumnItem6 > p{
-    padding: 50px;
-    line-height: 1.3;
-    order: -1;
-    text-align: right;
+.ColumnBlock10 > ul > li{
+    padding: 15px 0;
+}
+
+.ColumnBlock10 > ul > li > img{
+    width: 100%;
+}
+
+.ColumnBlock10 > ul > li > p{
+    width: 640px;
 }
 
 
@@ -302,3 +379,60 @@ iframe{
     font-size: 10px;
     text-align: center;
 }
+
+
+/* ================================================== MediaQuery ================================================== */
+
+/* @media (min-width: 576px) and (max-width: 767.98px){
+    .VideoBlock1, .Wrapper{
+      width: 540px;
+    }
+  }
+  
+  @media screen and (max-width: 575.98px){
+    .VideoBlock1, .Wrapper{
+      width: 100%;
+    }
+  } */
+
+  /* -------------------------------------------------------------------- */
+
+  /* img{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 575.98px){
+    .VideoBlock1, .Wrapper{
+      width: 100%;
+    }
+  }
+  
+@media (min-width: 576px) and (max-width: 767.98px){
+    .VideoBlock1, .Wrapper{
+      width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px){
+    .VideoBlock1, .Wrapper{
+      width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199.98px){
+    .VideoBlock1, .Wrapper{
+      width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) and (max-width: 1399.98px){
+    .VideoBlock1, .Wrapper{
+      width: 1140px;
+    }
+  }
+  
+  @media (min-width: 1400px){
+    .VideoBlock1, .Wrapper{
+      width: 1320px;
+    }
+  } */

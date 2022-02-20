@@ -1,8 +1,3 @@
-@import url(./reset.css);
-
-*{
-    box-sizing: border-box;
-}
 
 .o-product__before-after {
     margin: 14px auto 0; }

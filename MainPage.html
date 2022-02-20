@@ -4,18 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MainPage</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Index.MainPage</title>
+    <link rel="stylesheet" href="./css/style_Model.css">
     <link rel="stylesheet" href="./css/style_Arms.css">
     <link rel="stylesheet" href="./css/style_MainPage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+        integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
+    <!-- <link href="https://cdn.bootcss.com/fullPage.js/2.9.5/jquery.fullpage.css" rel="stylesheet"> -->
+
 </head>
 
-<body>
-
+<body>   
     <!-------------------------------- Video1 -------------------------------->
     <div class="VideoBlock1">
         <video autoplay loop playsinline muted>
@@ -54,7 +59,7 @@
 
             <!-- 刺青套件開始 -->
             <div id="trigger02"></div>
-            <div class="o-product__before-after">
+            <div class="o-product__before-after js-slide js-slide-i js-active">
                 <!-- ---暫時隱藏---
             <div class="say_choose">
             <img src="img/icon_a.png" alt="">
@@ -119,7 +124,7 @@
                 </div>
 
 
-                <div class="jamjar">
+                <div class="jamjar js-slide js-slide-i js-active">
                     <ul class="jar">
                         <li><a ref=""><img src="./img/Arms/SourcesBar/6-2-1.png" alt="">
                                 <div class="shadow"></div><span class="thisjam"></span>
@@ -163,35 +168,58 @@
             <!-- Artists -->
             <div class="ColumnBlock8">
                 <ul>
+                    <!-- 1 -->
                     <li>
                         <div class="Line3"></div>
                     </li>
+
+                    <!-- 2 -->
                     <li>
                         <h2> ARTISTS </h2>
                     </li>
+
+                    <!-- 3 -->
                     <li>
                         <div class="Line3"></div>
                     </li>
+
+                    <!-- 4 -->
                     <li><img src="./img/Resources/15-1.png" alt=""></li>
+                    
+                    <!-- 5轉7 -->
                     <li><img src="./img/Resources/15-2.png" alt=""></li>
+                    
+                    <!-- 6轉10 -->
                     <li><img src="./img/Resources/15-3.png" alt=""></li>
+                    
+                    <!-- 7轉5 -->
                     <li>
                         <p>Horikyo.<br><br>Career since 2015.<br><br>- Tradition / Oldschool -</p>
                     </li>
+                    
+                    <!-- 8 -->
                     <li>
                         <p>Goodolddayz.<br><br>Career since 2012.<br><br>- Black and Grey / Font -</p>
                     </li>
+                    
+                    <!-- 9轉11 -->
                     <li>
                         <p>BanDai 01.<br><br>Career since 2021.<br><br>- Tradition / Photography -</p>
                     </li>
+                    
+                    <!-- 10轉6 -->
                     <li><a href="./Appointment.html"><button>
-                                <h3> Make an Appointment </h3>
+                            <h3> Make an Appointment </h3>
                             </button></a></li>
+                    
+                    <!-- 11轉9 -->
                     <li><a href="./Appointment.html"><button>
-                                <h3> Make an Appointment </h3>
+                            <h3> Make an Appointment </h3>
                             </button></a></li>
+                    
+                    <!-- 12 -->
                     <li><a href="./Appointment.html"><button>
-                                <h3> Make an Appointment </h3>
+                            <h3> Make an Appointment </h3>
                             </button></a></li>
                 </ul>
             </div>
@@ -257,7 +285,7 @@
                     <li></li>
                 </ul>
             </div>
-
+    
 
             <!-------------------------------- Footer -------------------------------->
             <footer>
@@ -319,10 +347,9 @@
 
 
         </div>
+    </div>
 
-
-
-
+</div>
 
         <!-- <video id="indexBannerVideo" src="./img/video/123.mp4" autoplay="" loop="" muted="" playsinline="" type="video/mp4">
         </video> -->
@@ -330,7 +357,7 @@
 
 
         <!-------------------------------- Font Awesome for icons -------------------------------->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> -->
 
 
         <!-- 刺青開始 -->
@@ -529,11 +556,36 @@
                 //     tit:'蝝�樴齿�𨀣�𣈯��',
                 //     in:'��𣈯�祆�𣂼�嚗𡁶�樴齿�栶���蒾��蝟硔��瑼豢狀��憭拍�嗆�烐�䀹�𡏭��'
                 // },
-
-
             ];
-
         </script>
+
+        <!-------------------------------- Slidein -------------------------------->
+        <script>
+            let slogan = document.getElementsByClassName('js-slide');
+
+            function doScroll() {
+                // Y軸高度
+                let aa = window.pageYOffset;
+                for (let i = 0; i < slogan.length; i++) {
+                    if (aa > slogan[i].offsetTop / 2) {
+                        slogan[i].classList.add('js-active');
+                    } else {
+                        slogan[i].classList.remove('js-active');
+                    }
+                }
+            }
+            window.addEventListener('scroll', doScroll);
+        </script>
+
+
+        <!-------------------------------- FullPage -------------------------------->
+        <!-- <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/fullPage.js/2.9.5/jquery.fullpage.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $('#fullpage').fullpage();
+            });
+        </script> -->
 
 
 </body>
