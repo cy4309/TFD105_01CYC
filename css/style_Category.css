@@ -301,3 +301,232 @@ iframe{
     font-size: 10px;
     text-align: center;
 }
+
+/* ================================================== MediaQuery ================================================== */
+
+@media screen and (max-width: 575.98px){
+    
+    img{
+        max-width: 100%;
+    }
+
+    .Main{
+        /* border: 1px solid orange; */
+        /* height: 100vh; */
+        /* width: 100%; */
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .Footer1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* align-content: center; */
+        align-items: center;
+    }
+
+    .Nav2{
+        height: 250px;
+        display: flex;
+        margin: 100px 0;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .Nav2 > ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: right;
+    }
+
+    iframe{
+        /* width: 585px; */
+        /* height: 360px; */
+        width: 130px;
+        height: 280px;
+        /* margin: 50px 0; */
+    }
+
+    .Footer3 > p{
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    
+    img{
+        max-width: 100%;
+    }
+
+    .Main{
+        /* border: 1px solid orange; */
+        /* height: 100vh; */
+        /* width: 100%; */
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .Footer1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* align-content: center; */
+        align-items: center;
+    }
+
+    .Nav2{
+        height: 250px;
+        display: flex;
+        margin: 100px 0;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .Nav2 > ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: right;
+    }
+
+    iframe{
+        /* width: 585px; */
+        /* height: 360px; */
+        width: 130px;
+        height: 280px;
+        /* margin: 50px 0; */
+    }
+
+    .Footer3 > p{
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    
+    img{
+        max-width: 100%;
+    }
+
+    .Main{
+        /* border: 1px solid orange; */
+        /* height: 100vh; */
+        /* width: 100%; */
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .Footer1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* align-content: center; */
+        align-items: center;
+    }
+
+    .Nav2{
+        height: 250px;
+        display: flex;
+        margin: 100px 0;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .Nav2 > ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: right;
+    }
+
+    iframe{
+        /* width: 585px; */
+        /* height: 360px; */
+        width: 130px;
+        height: 280px;
+        /* margin: 50px 0; */
+    }
+
+    .Footer3 > p{
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    
+    img{
+        max-width: 100%;
+    }
+
+    .Main{
+        /* border: 1px solid orange; */
+        /* height: 100vh; */
+        /* width: 100%; */
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .Footer1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* align-content: center; */
+        align-items: center;
+    }
+
+    .Nav2{
+        height: 250px;
+        display: flex;
+        margin: 100px 0;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .Nav2 > ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: right;
+    }
+
+    iframe{
+        /* width: 585px; */
+        /* height: 360px; */
+        width: 130px;
+        height: 280px;
+        /* margin: 50px 0; */
+    }
+
+    .Footer3 > p{
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px){
+
+    .Main{
+        /* border: 1px solid orange; */
+        /* height: 100vh; */
+        /* width: 100%; */
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width: 1400px){    
+  
+    .Main{
+        /* border: 1px solid orange; */
+        /* height: 100vh; */
+        /* width: 100%; */
+        width: 100%;
+        margin: 0 auto;
+    }
+}

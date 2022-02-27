@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test2_changePhotos</title>
+    <title>test2</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     <style>
         body {
@@ -95,18 +95,33 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-    <script src="https://cdn.rawgit.com/robin-dela/hover-effect/master/js/hover.min.js"></script>
+    <script src="./hover-effect.umd.js"></script>
+
     <script>
         new hoverEffect({
             parent: document.querySelector('.ticket'),
-            intensity1: 0.1,
-            intensity2: 0.1,
-            angle2: Math.PI / 2,
-            image1: 'https://upload.wikimedia.org/wikipedia/commons/1/1b/%E8%94%A1%E8%8B%B1%E6%96%87%E5%AE%98%E6%96%B9%E5%85%83%E9%A6%96%E8%82%96%E5%83%8F%E7%85%A7.png',
-            image2: 'https://image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fstorage.googleapis.com%2Fwww-cw-com-tw%2Farticle%2F201903%2Farticle-5c80efc542af5.jpg/?w=1600&format=webp',
-            displacementImage: 'https://raw.githubusercontent.com/robin-dela/hover-effect/ca59bfa67fe75a331e2a04452f7b02f1671fdaa0/images/stripe1mul.png'
+            intensity1: 1,
+            intensity2: 1,
+            // angle2: Math.PI / 2,
+            speedIn: 1,
+            speedOut: 1,
+            // image1: 'https://upload.wikimedia.org/wikipedia/commons/1/1b/%E8%94%A1%E8%8B%B1%E6%96%87%E5%AE%98%E6%96%B9%E5%85%83%E9%A6%96%E8%82%96%E5%83%8F%E7%85%A7.png',
+            // image2: 'https://image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fstorage.googleapis.com%2Fwww-cw-com-tw%2Farticle%2F201903%2Farticle-5c80efc542af5.jpg/?w=1600&format=webp',
+            // image1: "./img/Font/2-2.jpg",
+            // image2: "./img/Font/2-3.jpg",
+            image1: "./DistortionHoverEffect/img/Img11.jpg",
+            image2: "./DistortionHoverEffect/img/Img10.jpg",
+            // displacementImage: 'https://raw.githubusercontent.com/robin-dela/hover-effect/ca59bfa67fe75a331e2a04452f7b02f1671fdaa0/images/stripe1mul.png'
+            displacementImage: './DistortionHoverEffect/img/displacement/1.jpg'
+        });
+    </script>
+
+    <script>
+        new hoverEffect({
+            
         });
     </script>
 </body>

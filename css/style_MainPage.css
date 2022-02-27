@@ -3,24 +3,22 @@
 
 .VideoBlock1{
     /* border: 1px solid yellow; */
-    width: 1280px;
+    width: 1920px;
     overflow: hidden;
     object-fit: cover;
     max-width: 100%;
     /* transform: translate(-50%); */
     position: relative;
     margin-bottom: 100px;
-    margin: 0 auto;
-    padding-top: calc(100% * 9 / 16);
-    /* height: 100vh; */
+    /* margin: auto; */
+    /* padding-top: calc(100% * 9 / 16); */
+    height: 100vh;
 }
 
 .VideoBlock1 > video{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
+    width: 1920px;
+    /* height: 100vh; */
+    /* transform: translate(-30%); */
 }
 
 /* ---------------------------------------- LOGO ---------------------------------------- */
@@ -31,26 +29,12 @@
     z-index: 0;
 } */
 
-.Logo > h1{
-    font-size: 20px;
-    color: white;
+.logo{
     position: absolute;
-    /* left: 538px; */
-    /* top: 272px; */
+    top: 50%;
     left: 50%;
-    top: 38%;
-    transform: translateX(-50%);
-    /* margin: auto; */
-}
-
-.Logo > img{
-    width: 200px;
-    position: absolute;
-    /* left: 530px; */
-    /* top: 300px; */
-    left: 42%;
-    top: 42%;
-    /* margin: auto; */
+    transform: translate(-50%, -50%);
+    margin: auto;
 }
 
 .Logo > a{
@@ -58,9 +42,19 @@
     width: 220px;
     height: 130px;
     position: absolute;
-    left: 41%;
-    top: 38%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     /* border: 3px solid blue; */
+}
+
+.Logo > a > h1{
+    font-size: 20px;
+    text-align: left;
+}
+
+.Logo > a > img{
+    width: 220px;
 }
 
 /* ---------------------------------------- HamList ---------------------------------------- */
@@ -77,12 +71,20 @@
 /* 導覽線 */
 .Nav1 > ul{
     /* border: 2px solid white; */
-    border-top: 2px solid rgb(255, 255, 255, .3);
-    border-bottom: 2px solid rgb(255, 255, 255, .3);
+    /* border-top: 2px solid rgb(255, 255, 255, .3); */
+    /* border-bottom: 2px solid rgb(255, 255, 255, .3); */
+    border-right: 2px solid rgb(255, 255, 255, .3);
+    padding: 0 5px;
+    color: rgb(255, 255, 255, .3);
+    text-align: right;
     width: 125px;
     height: 20px;
     position: relative;
     position: fixed;
+    /* top: 8%; */
+    /* right: 4%; */
+    top: 30px;
+    right: 30px;
 }
 
 .Nav1 > ul > li{
@@ -136,12 +138,14 @@
 
 
 /* ============================================= Arms ============================================= */
-
-.MainPage{
+.Main{
     /* border: 1px solid orange; */
     /* height: 100vh; */
-    width: 100%; 
+    /* width: 100%; */
+    width: 1200px;
+    /* margin: 0 auto; */
 }
+
 
 .js-slide{
     opacity: 0;
@@ -155,6 +159,10 @@
 .js-active {
     transform: translate(0);
     opacity: 1;
+}
+
+#trigger02{
+    -webkit-appearance: none;
 }
 
 /* ---------------------------------------- ColumnBlock7 ---------------------------------------- */
@@ -261,6 +269,10 @@ button:hover{
     padding: 15px 0;
 }
 
+.ColumnBlock9 > ul > li > h2{
+    font-size: 60px;
+}
+
 .ColumnBlock9 > ul > li > img{
     width: 360px;
 }
@@ -286,12 +298,20 @@ button:hover{
     padding: 15px 0;
 }
 
+.ColumnBlock10 > ul > li:nth-child(1), .ColumnBlock10 > ul > li:nth-child(2), .ColumnBlock10 > ul > li:nth-child(3){
+    width: 360px;
+}
+
+.ColumnBlock10 > ul > li > h2{
+    font-size: 60px;
+}
+
 .ColumnBlock10 > ul > li > img{
     width: 100%;
 }
 
 .ColumnBlock10 > ul > li > p{
-    width: 640px;
+    width: 650px;
 }
 
 
@@ -300,10 +320,16 @@ button:hover{
 footer{
     background-image: url(../img/Resources/9-3-2.png);
     background-color: #3B3B3B;
-    width: 100%;
-    height: 710px;
-    padding: 90px 20px;
+    /* width: 100%; */
+    /* height: 710px; */
+    padding: 0px 20px;
+    padding-top: 50px;
     margin-top: 20px;
+}
+
+.Footerblock{
+    width: 1200px;
+    margin: 0 auto;
 }
 
 /* ---------------------------------------- Footer1 ---------------------------------------- */
@@ -370,6 +396,7 @@ iframe{
 .Footer3{
     height: 90px;
     /* border: 1px solid blue; */
+    clear: both;
 }
 
 
@@ -388,13 +415,84 @@ iframe{
 
 /* ================================================== MediaQuery ================================================== */
 
-  img{
-    max-width: 100%;
-}
-
 @media screen and (max-width: 575.98px){
-    .Wrapper{
-      width: 100%;
+    
+    img{
+        max-width: 100%;
+    }
+
+    .VideoBlock1 > video{
+        width: 1920px;
+        /* height: 100vh; */
+        transform: translate(-40%);
+    }
+
+    .Main{
+        /* border: 1px solid orange; */
+        /* height: 100vh; */
+        /* width: 100%; */
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* ---------------------------------------- Footer ---------------------------------------- */
+
+    footer{
+        background-image: url(../img/Resources/9-3-2.png);
+        background-color: #3B3B3B;
+        /* width: 100%; */
+        padding: 10px 0px;
+        padding-top: 50px;
+        margin-top: 20px;
+    }
+
+    .Footerblock{
+        width: 100vw;
+        margin: 0 auto;
+        padding: 20px 20px;
+    }
+    
+    .Footer1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* align-content: center; */
+        align-items: center;
+    }
+
+    .Nav2{
+        height: 250px;
+        display: flex;
+        margin: 100px 0;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .Nav2 > ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: right;
+    }
+
+    iframe{
+        /* width: 585px; */
+        /* height: 360px; */
+        width: 130px;
+        height: 280px;
+        /* margin: 50px 0; */
+    }
+
+    .Footer3 > p{
+        font-size: 10px;
+        text-align: center;
+    }
+    
+     /* ---------------------------------------- Content ---------------------------------------- */
+     
+    .ColumnBlock10 > ul > li > p{
+        /* width: 650px; */
+        width: 100%;
     }
     
     .ColumnBlock8 > ul > li:nth-child(1), .ColumnBlock10 > ul > li:nth-child(1){
@@ -473,8 +571,28 @@ iframe{
   }
   
 @media (min-width: 576px) and (max-width: 767.98px){
-    .Wrapper{
-      width: 540px;
+
+    img{
+        max-width: 100%;
+    }
+
+    .VideoBlock1 > video{
+        width: 1920px;
+        /* height: 100vh; */
+        transform: translate(-40%);
+    }
+
+    .Main{
+        /* border: 1px solid orange; */
+        /* height: 100vh; */
+        /* width: 100%; */
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .ColumnBlock10 > ul > li > p{
+        /* width: 650px; */
+        width: 100%;
     }
     
     .ColumnBlock8 > ul > li:nth-child(1), .ColumnBlock10 > ul > li:nth-child(1){
@@ -553,9 +671,30 @@ iframe{
   }
   
   @media (min-width: 768px) and (max-width: 991.98px){
-    .Wrapper{
-      width: 720px;
+
+    img{
+        max-width: 100%;
     }
+
+    .VideoBlock1 > video{
+        width: 1920px;
+        /* height: 100vh; */
+        transform: translate(-40%);
+    }
+
+    .Main{
+        /* border: 1px solid orange; */
+        /* height: 100vh; */
+        /* width: 100%; */
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .ColumnBlock10 > ul > li > p{
+        /* width: 650px; */
+        width: 100%;
+    }
+
     .ColumnBlock8 > ul, .ColumnBlock10 > ul{
         display: flex;
         flex-wrap: wrap;
@@ -651,9 +790,30 @@ iframe{
   }
   
   @media (min-width: 992px) and (max-width: 1199.98px){
-    .Wrapper{
-      width: 960px;
+
+    img{
+        max-width: 100%;
     }
+
+    .VideoBlock1 > video{
+        width: 1920px;
+        /* height: 100vh; */
+        transform: translate(-40%);
+    }
+
+    .Main{
+        /* border: 1px solid orange; */
+        /* height: 100vh; */
+        /* width: 100%; */
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .ColumnBlock10 > ul > li > p{
+        /* width: 650px; */
+        width: 100%;
+    }
+
     .ColumnBlock8 > ul, .ColumnBlock10 > ul{
         display: flex;
         flex-wrap: wrap;
@@ -746,13 +906,25 @@ iframe{
   }
   
   @media (min-width: 1200px) and (max-width: 1399.98px){
-    .Wrapper{
-      width: 1140px;
+
+    .Main{
+        /* border: 1px solid orange; */
+        /* height: 100vh; */
+        /* width: 100%; */
+        width: 100%;
+        margin: 0 auto;
     }
+
   }
   
   @media (min-width: 1400px){
-    .Wrapper{
-      width: 1320px;
+    
+    .Main{
+        /* border: 1px solid orange; */
+        /* height: 100vh; */
+        /* width: 100%; */
+        width: 100%;
+        margin: 0 auto;
     }
+
   }
