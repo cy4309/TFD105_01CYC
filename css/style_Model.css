@@ -7,24 +7,9 @@
 
 /* ================================================== Model ================================================== */
 
-body{
-    background-color: black;
-    font-family: impact, 'Noto Serif JP', serif;
-    font-size: 18px;
-    color: white;
-    letter-spacing: 1.5px;
-}
-
 @font-face {
     font-family: impact;
     src: url(../font/impact.ttf);
-}
-
-.Wrapper{
-    /* border: 1px solid red; */
-    /* width: 1200px; */
-    width: 100%;
-    margin: 0 auto;
 }
 
 img, iframe, .ColumnItem1, .ColumnItem2, .ColumnItem3, .ColumnItem4, .ColumnItem5, .ColumnItem6, .ColumnItem7, .ColumnItem8{
@@ -35,6 +20,32 @@ img, iframe, .ColumnItem1, .ColumnItem2, .ColumnItem3, .ColumnItem4, .ColumnItem
 img:hover, iframe:hover, .ColumnItem1:hover, .ColumnItem2:hover, .ColumnItem3:hover, .ColumnItem4:hover, .ColumnItem5:hover, .ColumnItem6:hover, .ColumnItem7:hover, .ColumnItem8:hover{
     /* -webkit-filter:grayscale(0); */
     filter:grayscale(0);
+}
+
+
+
+
+body{
+    background-color: black;
+    font-family: impact, 'Noto Serif JP', serif;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.Wrapper{
+    /* border: 1px solid red; */
+    /* width: 1200px; */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.Main{
+    /* border: 1px solid orange; */
+    /* height: 100vh; */
+    /* width: 100%; */
+    width: 1200px;
+    margin: 0 auto;
 }
 
 h1{
@@ -55,3 +66,519 @@ a{
     text-decoration: none;
     display: inline-block;
 }
+
+/* =============================================== TopLogo ================================================== */
+
+/* ---------------------------------------- LOGO ---------------------------------------- */
+/* LOGO圖 */
+
+/* .Logo_Image, .Logo_Text{
+    float: left;
+    display: flex;
+} */
+
+.Logo_Image > a > img{
+    width: 150px;
+}
+
+/* ---------------------------------------- GreyBG ---------------------------------------- */
+nav{
+    background-image: url(../img/Resources/9-3-2.png);
+    width: 100%;
+    height: 114px;
+    background-color: #3B3B3B;
+    display: flex;
+    align-items: center;
+}
+
+.Top{
+    /* width: 1200px; */
+    width: 100%;
+    padding-left: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    /* transform: translateY(25%); */
+}
+
+/* ---------------------------------------- HamList ---------------------------------------- */
+.Nav1{
+    margin-left: auto;
+    position: fixed;
+    z-index: 50;
+}
+
+/* 導覽線 */
+.Nav1 > ul{
+    border-right: 3px solid rgb(255, 255, 255, .3);
+    padding: 0 5px;
+    color: rgb(255, 255, 255, .3);
+    text-align: right;
+    width: 140px;
+    height: 20px;
+    position: fixed;
+    top: 48px;
+    right: 48px; 
+}
+
+.Nav1 > ul > li{
+    border: 2px solid white;
+    background-color: rgba(100, 100, 100, .7);
+    width: 135px;
+    height: 60px;
+    line-height: 60px;
+    text-align: right;
+    padding-left: 10px;
+    position: absolute;
+    top: 20px;
+
+    display: none;
+}
+
+.Nav1 > ul >li:nth-child(2){
+    top: 80px;
+}
+
+.Nav1 > ul >li:nth-child(3){
+    top: 140px;
+}
+
+.Nav1 > ul >li:nth-child(4){
+    top: 200px;
+}
+
+.Nav1 > ul >li:nth-child(5){
+    top: 260px;
+}
+
+.Nav1 > ul >li:nth-child(6){
+    top: 320px;
+}
+
+.Nav1 > ul > li > a{
+    display: block;
+    width: 100px;
+    height: 60px;
+}
+
+/* ---------------------------------------- HamList_hover ---------------------------------------- */
+.Nav1 > ul:hover li{
+    display: block;
+}
+
+.Nav1 > ul > li:hover{
+    background-color: rgba(50, 50, 50, .7);
+}
+
+/* ================================================== footer ================================================== */
+
+footer{
+    background-image: url(../img/Resources/9-3-2.png);
+    background-color: #3B3B3B;
+    /* width: 100%; */
+    /* height: 710px; */
+    padding: 0px 20px;
+    padding-top: 50px;
+    margin-top: 20px;
+}
+
+.Footerblock{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* ---------------------------------------- Footer1 ---------------------------------------- */
+
+.Footer1{
+    width: 100%;
+    display: flex;
+    /* align-content: center; */
+    align-items: center;
+}
+
+.Footer1 > h2{
+    flex-grow: 1;
+}
+
+.Footer1 > .Line1{
+    width: 50px;
+    height: 8px;
+    background-color: white;
+    flex-grow: 1;
+}
+
+.Footer1 > p{
+    flex-grow: 1;
+}
+
+.Footer > h3{
+    flex-grow: 1;
+}
+
+/* ---------------------------------------- Footer2 ---------------------------------------- */
+
+.Footer2{
+    margin-right: 20px;
+    width: 100%;
+    display: flex;
+    /* border: 5px solid red; */
+}
+
+.Nav2{
+    /* border: 1px solid pink; */
+    /* width: 430px; */
+    height: 250px;
+    display: flex;
+    width: 30%;
+    align-self: center;
+    justify-content: end;
+    /* margin: 100px 0;
+    margin-left: 220px;
+    margin-right: 40px; */
+}
+
+.Nav2 > ul{
+    /* width: 430px;
+    height: 360px; */
+    display: flex;
+    flex-direction: column;
+    /* margin-left: auto; */
+    justify-content: space-between;
+    text-align: right;
+}
+
+.iiframe{
+    width: 70%;
+    padding-left: 20px;
+}
+
+iframe{
+    /* width: 585px; */
+    width: 80%;
+    height: 360px;
+    margin: 90px 20px;
+}
+
+/* ---------------------------------------- Footer3 ---------------------------------------- */
+.Footer3{
+    height: 90px;
+    /* border: 1px solid blue; */
+}
+
+
+.Footer3 > .Line2{
+    width: 100%;
+    height: 8px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.Footer3 > p{
+    font-size: 10px;
+    text-align: center;
+}
+
+
+
+
+
+/* ================================================== MediaQuery ================================================== */
+
+@media screen and (max-width: 575.98px){
+    /* ---------------------------------------- Footer ---------------------------------------- */
+
+    footer{
+        background-image: url(../img/Resources/9-3-2.png);
+        background-color: #3B3B3B;
+        /* width: 100%; */
+        padding: 10px 0px;
+        padding-top: 50px;
+        margin-top: 20px;
+    }
+
+    .Footerblock{
+        width: 100vw;
+        margin: 0 auto;
+        padding: 20px 20px;
+    }
+    
+    .Footer1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* align-content: center; */
+        align-items: center;
+        text-align: center;
+    }
+    
+    .Footer1 > h2{
+        flex-grow: 1;
+        margin-bottom: 20px;
+    }
+
+    .Footer1 > .Line1{
+        width: 50px;
+        height: 8px;
+        background-color: white;
+        flex-grow: 1;
+        margin-bottom: 20px;
+    }
+
+    .Footer1 > p{
+        flex-grow: 1;
+        margin-bottom: 20px;
+    }
+
+    .Footer > h3{
+        flex-grow: 1;
+        margin-bottom: 20px;
+    }
+
+    .Nav2{
+        height: 250px;
+        display: flex;
+        margin: 100px 0;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .Nav2 > ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: right;
+    }
+
+    .Footer3 > p{
+        font-size: 10px;
+        text-align: center;
+    }
+  }
+  
+@media (min-width: 576px) and (max-width: 767.98px){
+    /* ---------------------------------------- Footer ---------------------------------------- */
+
+    footer{
+        background-image: url(../img/Resources/9-3-2.png);
+        background-color: #3B3B3B;
+        /* width: 100%; */
+        padding: 10px 0px;
+        padding-top: 50px;
+        margin-top: 20px;
+    }
+
+    .Footerblock{
+        width: 100vw;
+        margin: 0 auto;
+        padding: 20px 20px;
+    }
+    
+    .Footer1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* align-content: center; */
+        align-items: center;
+        text-align: center;
+    }
+        
+    .Footer1 > h2{
+        flex-grow: 1;
+        margin-bottom: 20px;
+    }
+
+    .Footer1 > .Line1{
+        width: 50px;
+        height: 8px;
+        background-color: white;
+        flex-grow: 1;
+        margin-bottom: 20px;
+    }
+
+    .Footer1 > p{
+        flex-grow: 1;
+        margin-bottom: 20px;
+    }
+
+    .Footer > h3{
+        flex-grow: 1;
+        margin-bottom: 20px;
+    }
+
+    .Nav2{
+        height: 250px;
+        display: flex;
+        margin: 100px 0;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .Nav2 > ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: right;
+    }
+
+    .Footer3 > p{
+        font-size: 10px;
+        text-align: center;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px){
+    /* ---------------------------------------- Footer ---------------------------------------- */
+
+    footer{
+        background-image: url(../img/Resources/9-3-2.png);
+        background-color: #3B3B3B;
+        /* width: 100%; */
+        padding: 10px 0px;
+        padding-top: 50px;
+        margin-top: 20px;
+    }
+
+    .Footerblock{
+        width: 100vw;
+        margin: 0 auto;
+        padding: 20px 20px;
+    }
+    
+    .Footer1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* align-content: center; */
+        align-items: center;
+        text-align: center;
+    }
+
+    .Footer1 > h2{
+        flex-grow: 1;
+        margin-bottom: 20px;
+    }
+
+    .Footer1 > .Line1{
+        width: 50px;
+        height: 8px;
+        background-color: white;
+        flex-grow: 1;
+        margin-bottom: 20px;
+    }
+
+    .Footer1 > p{
+        flex-grow: 1;
+        margin-bottom: 20px;
+    }
+
+    .Footer > h3{
+        flex-grow: 1;
+        margin-bottom: 20px;
+    }
+
+    .Nav2{
+        height: 250px;
+        display: flex;
+        margin: 100px 0;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .Nav2 > ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: right;
+    }
+
+    .Footer3 > p{
+        font-size: 10px;
+        text-align: center;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199.98px){
+    /* ---------------------------------------- Footer ---------------------------------------- */
+
+    footer{
+        background-image: url(../img/Resources/9-3-2.png);
+        background-color: #3B3B3B;
+        /* width: 100%; */
+        padding: 10px 0px;
+        padding-top: 50px;
+        margin-top: 20px;
+    }
+
+    .Footerblock{
+        width: 100vw;
+        margin: 0 auto;
+        padding: 20px 20px;
+    }
+    
+    .Footer1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* align-content: center; */
+        align-items: center;
+        text-align: center;
+    }
+   
+    .Footer1 > h2{
+        flex-grow: 1;
+        margin-bottom: 20px;
+    }
+
+    .Footer1 > .Line1{
+        width: 50px;
+        height: 8px;
+        background-color: white;
+        flex-grow: 1;
+        margin-bottom: 20px;
+    }
+
+    .Footer1 > p{
+        flex-grow: 1;
+        margin-bottom: 20px;
+    }
+
+    .Footer > h3{
+        flex-grow: 1;
+        margin-bottom: 20px;
+    }
+
+    .Nav2{
+        height: 250px;
+        display: flex;
+        margin: 100px 0;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .Nav2 > ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: right;
+    }
+
+    iframe{
+        /* width: 585px; */
+        /* height: 360px; */
+        width: 130px;
+        height: 280px;
+        /* margin: 50px 0; */
+    }
+
+    .Footer3 > p{
+        font-size: 10px;
+        text-align: center;
+    }
+  }
+  
+  @media (min-width: 1200px) and (max-width: 1399.98px){
+  }
+  
+  @media (min-width: 1400px){}

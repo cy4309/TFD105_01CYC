@@ -3,17 +3,33 @@
 
 .VideoBlock2{
     /* border: 1px solid yellow; */
-    width: 1280px;
+    /* width: 1920px; */
+    overflow: hidden;
+    object-fit: cover;
+    /* max-width: 100%; */
+    /* transform: translate(-50%); */
+    position: relative;
+    margin-bottom: 100px;
+    /* margin: auto; */
+    /* padding-top: calc(100% * 9 / 16); */
+    height: 100vh;
+}
+
+.VideoBlock2 > video{
+    /* width: 1920px; */
+    height: 100vh;
+    /* transform: translate(-30%); */
+}
+
+/* .VideoBlock2{
+    width: 1920px;
     overflow: hidden;
     object-fit: cover;
     max-width: 100%;
-    /* transform: translate(-50%); */
     position: relative;
     margin: 0 auto;
     margin-bottom: 20px;
-    padding-top: calc(100% * 9 / 16);
-    /* display: flex;
-    justify-content: center; */
+    height: 100vh;
 }
 
 .VideoBlock2 > video{
@@ -22,7 +38,7 @@
     position: absolute;
     left: 0;
     top: 0;
-}
+} */
 
 /* ---------------------------------------- LOGO ---------------------------------------- */
 
@@ -86,73 +102,6 @@
     transform: translateX(-17%);
 }
 
-.Nav1{
-    position: absolute;
-    top: 30px;
-    left: 1100px;
-    bottom: 0;
-    right: 0;
-    z-index: 50;
-}
-
-/* 導覽線 */
-.Nav1 > ul{
-    border-top: 2px solid rgb(255, 255, 255, .3);
-    border-bottom: 2px solid rgb(255, 255, 255, .3);
-    width: 125px;
-    height: 20px;
-    position: relative;
-    position: fixed;
-}
-
-.Nav1 > ul > li{
-    border: 2px solid white;
-    background-color: rgba(100, 100, 100, .7);
-    width: 125px;
-    height: 60px;
-    line-height: 60px;
-    text-align: right;
-    padding-left: 5px;
-    position: absolute;
-
-    display: none;
-}
-
-.Nav1 > ul >li:nth-child(2){
-    top: 60px;
-}
-
-.Nav1 > ul >li:nth-child(3){
-    top: 120px;
-}
-
-.Nav1 > ul >li:nth-child(4){
-    top: 180px;
-}
-
-.Nav1 > ul >li:nth-child(5){
-    top: 240px;
-}
-
-.Nav1 > ul >li:nth-child(6){
-    top: 300px;
-}
-
-.Nav1 > ul > li > a{
-    display: block;
-    width: 100px;
-    height: 60px;
-}
-
-/* ---------------------------------------- HamList_hover ---------------------------------------- */
-.Nav1 > ul:hover li{
-    display: block;
-}
-
-.Nav1 > ul > li:hover{
-    background-color: rgba(50, 50, 50, .7);
-}
-
 /* ================================================== Button ================================================== */
 button{
     width: 100%;
@@ -213,92 +162,93 @@ button:hover{
 }
 
 
-/* ================================================== footer ================================================== */
 
-footer{
-    background-image: url(../img/Resources/9-3-2.png);
-    background-color: #3B3B3B;
-    width: 100%;
-    height: 710px;
-    padding: 90px 20px;
-    margin-top: 20px;
+/* ================================================== MediaQuery ================================================== */
+
+@media screen and (max-width: 575.98px){
+    
+    img{
+        max-width: 100%;
+    }
+
+    .VideoBlock2 > video{
+        width: 1920px;
+        /* height: 100vh; */
+        transform: translate(-40%);
+    }
+
+    .Main{
+        /* border: 1px solid orange; */
+        /* height: 100vh; */
+        /* width: 100%; */
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
-/* ---------------------------------------- Footer1 ---------------------------------------- */
+@media (min-width: 576px) and (max-width: 767.98px){
 
-.Footer1{
-    width: 100%;
-    display: flex;
-    /* align-content: center; */
-    align-items: center;
+    img{
+        max-width: 100%;
+    }
+
+    .VideoBlock2 > video{
+        width: 1920px;
+        /* height: 100vh; */
+        transform: translate(-40%);
+    }
+
+    .Main{
+        /* border: 1px solid orange; */
+        /* height: 100vh; */
+        /* width: 100%; */
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
-.Footer1 > h2{
-    flex-grow: 1;
+@media (min-width: 768px) and (max-width: 991.98px){
+
+    img{
+        max-width: 100%;
+    }
+
+    .VideoBlock2 > video{
+        width: 1920px;
+        /* height: 100vh; */
+        transform: translate(-40%);
+    }
+
+    .Main{
+        /* border: 1px solid orange; */
+        /* height: 100vh; */
+        /* width: 100%; */
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
-.Footer1 > .Line1{
-    width: 50px;
-    height: 8px;
-    background-color: white;
-    flex-grow: 1;
+@media (min-width: 992px) and (max-width: 1199.98px){
+
+    img{
+        max-width: 100%;
+    }
+
+    .VideoBlock2 > video{
+        width: 1920px;
+        /* height: 100vh; */
+        transform: translate(-40%);
+    }
+
+    .Main{
+        /* border: 1px solid orange; */
+        /* height: 100vh; */
+        /* width: 100%; */
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
-.Footer1 > p{
-    flex-grow: 1;
-}
-
-.Footer > h3{
-    flex-grow: 1;
-}
-
-/* ---------------------------------------- Footer2 ---------------------------------------- */
-
-.Footer2{
-    float: left;
-}
-
-.Nav2{
-    /* border: 1px solid pink; */
-    /* width: 430px; */
-    height: 250px;
-    display: flex;
-    margin: 100px 0;
-    margin-left: 220px;
-    margin-right: 40px;
-}
-
-.Nav2 > ul{
-    /* width: 430px;
-    height: 360px; */
-    display: flex;
-    flex-direction: column;
-    /* margin-left: auto; */
-    justify-content: space-between;
-    text-align: right;
-}
-
-iframe{
-    width: 585px;
-    height: 360px;
-    margin: 50px 0;
-}
-
-/* ---------------------------------------- Footer3 ---------------------------------------- */
-.Footer3{
-    height: 90px;
-    /* border: 1px solid blue; */
-}
-
-
-.Footer3 > .Line2{
-    width: 100%;
-    height: 8px;
-    background-color: white;
-    margin-bottom: 40px;
-}
-
-.Footer3 > p{
-    font-size: 10px;
-    text-align: center;
-}
+@media (min-width: 1200px) and (max-width: 1399.98px){}
+  
+@media (min-width: 1400px){}

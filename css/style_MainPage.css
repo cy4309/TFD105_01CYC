@@ -57,94 +57,7 @@
     width: 220px;
 }
 
-/* ---------------------------------------- HamList ---------------------------------------- */
-
-.Nav1{
-    position: absolute;
-    top: 30px;
-    left: 1100px;
-    bottom: 0;
-    right: 0;
-    z-index: 50;
-}
-
-/* 導覽線 */
-.Nav1 > ul{
-    /* border: 2px solid white; */
-    /* border-top: 2px solid rgb(255, 255, 255, .3); */
-    /* border-bottom: 2px solid rgb(255, 255, 255, .3); */
-    border-right: 2px solid rgb(255, 255, 255, .3);
-    padding: 0 5px;
-    color: rgb(255, 255, 255, .3);
-    text-align: right;
-    width: 125px;
-    height: 20px;
-    position: relative;
-    position: fixed;
-    /* top: 8%; */
-    /* right: 4%; */
-    top: 30px;
-    right: 30px;
-}
-
-.Nav1 > ul > li{
-    border: 2px solid white;
-    background-color: rgba(100, 100, 100, .7);
-    width: 125px;
-    height: 60px;
-    line-height: 60px;
-    text-align: right;
-    padding-left: 5px;
-    /* position: absolute; */
-
-    display: none;
-}
-
-.Nav1 > ul >li:nth-child(2){
-    top: 60px;
-}
-
-.Nav1 > ul >li:nth-child(3){
-    top: 120px;
-}
-
-.Nav1 > ul >li:nth-child(4){
-    top: 180px;
-}
-
-.Nav1 > ul >li:nth-child(5){
-    top: 240px;
-}
-
-.Nav1 > ul >li:nth-child(6){
-    top: 300px;
-}
-
-.Nav1 > ul > li > a{
-    display: block;
-    width: 100px;
-    height: 60px;
-}
-
-/* ---------------------------------------- HamList_hover ---------------------------------------- */
-.Nav1 > ul:hover li{
-    display: block;
-}
-
-.Nav1 > ul > li:hover{
-    background-color: rgba(50, 50, 50, .7);
-}
-
-
-
 /* ============================================= Arms ============================================= */
-.Main{
-    /* border: 1px solid orange; */
-    /* height: 100vh; */
-    /* width: 100%; */
-    width: 1200px;
-    /* margin: 0 auto; */
-}
 
 
 .js-slide{
@@ -161,8 +74,13 @@
     opacity: 1;
 }
 
-#trigger02{
+#jarall{
     -webkit-appearance: none;
+    margin-top: 100px;
+}
+
+.jar{
+    margin-bottom: 100px;
 }
 
 /* ---------------------------------------- ColumnBlock7 ---------------------------------------- */
@@ -226,11 +144,11 @@ button > h3 {
     font-size: 48px;
 }
 
-.ColumnBlock9 > ul > li:nth-child(11){
+.ColumnBlock9 > ul > li:nth-child(11) > a > button{
     width: 1080px;
 }
 
-.ColumnBlock10 > ul > li:nth-child(11){
+.ColumnBlock10 > ul > li:nth-child(11) > a > button{
     width: 720px;
 }
 
@@ -265,7 +183,6 @@ button:hover{
 }
 
 .ColumnBlock9 > ul > li{
-    width: 360px;
     padding: 15px 0;
 }
 
@@ -314,105 +231,6 @@ button:hover{
     width: 650px;
 }
 
-
-/* ================================================== footer ================================================== */
-
-footer{
-    background-image: url(../img/Resources/9-3-2.png);
-    background-color: #3B3B3B;
-    /* width: 100%; */
-    /* height: 710px; */
-    padding: 0px 20px;
-    padding-top: 50px;
-    margin-top: 20px;
-}
-
-.Footerblock{
-    width: 1200px;
-    margin: 0 auto;
-}
-
-/* ---------------------------------------- Footer1 ---------------------------------------- */
-
-.Footer1{
-    width: 100%;
-    display: flex;
-    /* align-content: center; */
-    align-items: center;
-}
-
-.Footer1 > h2{
-    flex-grow: 1;
-}
-
-.Footer1 > .Line1{
-    width: 50px;
-    height: 8px;
-    background-color: white;
-    flex-grow: 1;
-}
-
-.Footer1 > p{
-    flex-grow: 1;
-}
-
-.Footer > h3{
-    flex-grow: 1;
-}
-
-/* ---------------------------------------- Footer2 ---------------------------------------- */
-
-.Footer2{
-    float: left;
-}
-
-.Nav2{
-    /* border: 1px solid pink; */
-    /* width: 430px; */
-    height: 250px;
-    display: flex;
-    margin: 100px 0;
-    margin-left: 220px;
-    margin-right: 40px;
-}
-
-.Nav2 > ul{
-    /* width: 430px;
-    height: 360px; */
-    display: flex;
-    flex-direction: column;
-    /* margin-left: auto; */
-    justify-content: space-between;
-    text-align: right;
-}
-
-iframe{
-    width: 585px;
-    height: 360px;
-    margin: 50px 0;
-}
-
-/* ---------------------------------------- Footer3 ---------------------------------------- */
-.Footer3{
-    height: 90px;
-    /* border: 1px solid blue; */
-    clear: both;
-}
-
-
-.Footer3 > .Line2{
-    width: 100%;
-    height: 8px;
-    background-color: white;
-    margin-bottom: 40px;
-}
-
-.Footer3 > p{
-    font-size: 10px;
-    text-align: center;
-}
-
-
 /* ================================================== MediaQuery ================================================== */
 
 @media screen and (max-width: 575.98px){
@@ -435,64 +253,33 @@ iframe{
         margin: 0 auto;
     }
 
-    /* ---------------------------------------- Footer ---------------------------------------- */
+    /* ---------------------------------------- Button ---------------------------------------- */
 
-    footer{
-        background-image: url(../img/Resources/9-3-2.png);
-        background-color: #3B3B3B;
-        /* width: 100%; */
-        padding: 10px 0px;
-        padding-top: 50px;
-        margin-top: 20px;
-    }
-
-    .Footerblock{
-        width: 100vw;
-        margin: 0 auto;
-        padding: 20px 20px;
+    .ColumnBlock9 > ul > li:nth-child(11) > a > button{
+        width: 270px;
     }
     
-    .Footer1{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        /* align-content: center; */
-        align-items: center;
+    .ColumnBlock10 > ul > li:nth-child(11) > a > button{
+        width: 270px;
     }
 
-    .Nav2{
-        height: 250px;
-        display: flex;
-        margin: 100px 0;
-        margin-left: 20px;
-        margin-right: 0;
-    }
-
-    .Nav2 > ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        text-align: right;
-    }
-
-    iframe{
-        /* width: 585px; */
-        /* height: 360px; */
-        width: 130px;
-        height: 280px;
-        /* margin: 50px 0; */
-    }
-
-    .Footer3 > p{
-        font-size: 10px;
-        text-align: center;
-    }
-    
-     /* ---------------------------------------- Content ---------------------------------------- */
-     
+    /* ---------------------------------------- Content ---------------------------------------- */
     .ColumnBlock10 > ul > li > p{
         /* width: 650px; */
         width: 100%;
+    }
+
+    .ColumnBlock9 > ul > li{
+        width: 360px;
+        padding: 15px 0;
+    }
+    
+    .ColumnBlock9 > ul > li > h2{
+        font-size: 60px;
+    }
+    
+    .ColumnBlock9 > ul > li > img{
+        width: 360px;
     }
     
     .ColumnBlock8 > ul > li:nth-child(1), .ColumnBlock10 > ul > li:nth-child(1){
@@ -590,9 +377,36 @@ iframe{
         margin: 0 auto;
     }
 
+    /* ---------------------------------------- Button ---------------------------------------- */
+
+    .ColumnBlock9 > ul > li:nth-child(11) > a > button{
+        width: 270px;
+    }
+    
+    .ColumnBlock10 > ul > li:nth-child(11) > a > button{
+        width: 270px;
+    }
+
+    /* ---------------------------------------- Content ---------------------------------------- */
     .ColumnBlock10 > ul > li > p{
         /* width: 650px; */
         width: 100%;
+    }
+
+    .ColumnBlock8 > ul, .ColumnBlock10 > ul{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .ColumnBlock9 > ul{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
     
     .ColumnBlock8 > ul > li:nth-child(1), .ColumnBlock10 > ul > li:nth-child(1){
@@ -690,6 +504,17 @@ iframe{
         margin: 0 auto;
     }
 
+    /* ---------------------------------------- Button ---------------------------------------- */
+
+    .ColumnBlock9 > ul > li:nth-child(11) > a > button{
+        width: 270px;
+    }
+    
+    .ColumnBlock10 > ul > li:nth-child(11) > a > button{
+        width: 270px;
+    }
+
+    /* ---------------------------------------- Content ---------------------------------------- */
     .ColumnBlock10 > ul > li > p{
         /* width: 650px; */
         width: 100%;
@@ -709,7 +534,6 @@ iframe{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        transform: translateX(-25%);
     }
     
     .ColumnBlock8 > ul > li:nth-child(1), .ColumnBlock10 > ul > li:nth-child(1){
@@ -809,6 +633,18 @@ iframe{
         margin: 0 auto;
     }
 
+    
+    /* ---------------------------------------- Button ---------------------------------------- */
+
+    .ColumnBlock9 > ul > li:nth-child(11) > a > button{
+        width: 270px;
+    }
+    
+    .ColumnBlock10 > ul > li:nth-child(11) > a > button{
+        width: 270px;
+    }
+
+    /* ---------------------------------------- Content ---------------------------------------- */
     .ColumnBlock10 > ul > li > p{
         /* width: 650px; */
         width: 100%;
@@ -827,7 +663,6 @@ iframe{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        transform: translateX(-25%);
     }
 
     .ColumnBlock8 > ul > li:nth-child(1), .ColumnBlock10 > ul > li:nth-child(1){
@@ -905,26 +740,6 @@ iframe{
     }
   }
   
-  @media (min-width: 1200px) and (max-width: 1399.98px){
-
-    .Main{
-        /* border: 1px solid orange; */
-        /* height: 100vh; */
-        /* width: 100%; */
-        width: 100%;
-        margin: 0 auto;
-    }
-
-  }
+  @media (min-width: 1200px) and (max-width: 1399.98px){}
   
-  @media (min-width: 1400px){
-    
-    .Main{
-        /* border: 1px solid orange; */
-        /* height: 100vh; */
-        /* width: 100%; */
-        width: 100%;
-        margin: 0 auto;
-    }
-
-  }
+  @media (min-width: 1400px){}
