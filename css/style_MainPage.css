@@ -231,6 +231,8 @@ button:hover{
     width: 650px;
 }
 
+
+
 /* ================================================== MediaQuery ================================================== */
 
 @media screen and (max-width: 575.98px){
@@ -493,7 +495,7 @@ button:hover{
     .VideoBlock1 > video{
         width: 1920px;
         /* height: 100vh; */
-        transform: translate(-40%);
+        /* transform: translate(-40%); */
     }
 
     .Main{

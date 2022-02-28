@@ -43,8 +43,8 @@ body{
 .Main{
     /* border: 1px solid orange; */
     /* height: 100vh; */
-    /* width: 100%; */
     width: 1200px;
+    /* width: 94%; */
     margin: 0 auto;
 }
 
@@ -287,6 +287,61 @@ iframe{
 /* ================================================== MediaQuery ================================================== */
 
 @media screen and (max-width: 575.98px){
+    
+/* =============================================== TopLogo ================================================== */
+
+/* ---------------------------------------- LOGO ---------------------------------------- */
+/* LOGO圖 */
+
+/* .Logo_Image, .Logo_Text{
+    float: left;
+    display: flex;
+} */
+
+.Logo_Image > a > img{
+    width: 80px;
+}
+
+.Logo_Text > a > h1{
+    font-size: 14px;
+    width: 150px;
+}
+
+.Nav1 > ul{
+    border-right: 3px solid rgb(255, 255, 255, .3);
+    padding: 0 5px;
+    color: rgb(255, 255, 255, .3);
+    text-align: right;
+    width: 140px;
+    height: 20px;
+    position: fixed;
+    top: 46px;
+    right: 20px;
+}
+
+/* ---------------------------------------- GreyBG ---------------------------------------- */
+nav{
+    background-image: url(../img/Resources/9-3-2.png);
+    width: 100%;
+    height: 114px;
+    background-color: #3B3B3B;
+    display: flex;
+    align-items: center;
+}
+
+.Top{
+    /* width: 1200px; */
+    width: 100%;
+    padding-left: 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    /* transform: translateY(25%); */
+}
+
+
     /* ---------------------------------------- Footer ---------------------------------------- */
 
     footer{

@@ -8,6 +8,7 @@
     text-align: center;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .ColumnBlock4 > ul > li{
@@ -21,4 +22,30 @@
 
 .ColumnBlock4 > ul > li:nth-child(1), .ColumnBlock4 > ul > li:nth-child(3), .ColumnBlock4 > ul > li:nth-child(4), .ColumnBlock4 > ul > li:nth-child(6), .ColumnBlock4 > ul > li:nth-child(7), .ColumnBlock4 > ul > li:nth-child(9), .ColumnBlock4 > ul > li:nth-child(10), .ColumnBlock4 > ul > li:nth-child(12){
     font-size: 55px;
+}
+
+
+
+/* ================================================== MediaQuery ================================================== */
+
+@media screen and (max-width: 575.98px){}
+
+@media (min-width: 576px) and (max-width: 767.98px){}
+
+@media (min-width: 768px) and (max-width: 991.98px){}
+
+@media (min-width: 992px) and (max-width: 1199.98px){}
+
+@media (min-width: 1200px) and (max-width: 1399.98px){}
+
+@media (min-width: 1400px){
+
+    .ColumnBlock4 > ul{
+        width: 1200px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        transform: translateX(29%);
+    }
 }
