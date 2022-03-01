@@ -618,15 +618,7 @@ nav{
         justify-content: space-between;
         text-align: right;
     }
-
-    iframe{
-        /* width: 585px; */
-        /* height: 360px; */
-        width: 130px;
-        height: 280px;
-        /* margin: 50px 0; */
-    }
-
+    
     .Footer3 > p{
         font-size: 10px;
         text-align: center;

@@ -6,6 +6,8 @@
     height: 1908px;
     display: flex;
     align-items: center;
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 
 .TextBlock1{
