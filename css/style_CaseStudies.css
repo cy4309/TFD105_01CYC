@@ -24,6 +24,11 @@
     font-size: 55px;
 }
 
+.ColumnBlock4 > ul > .Traditional_Change, .ColumnBlock4 > ul > .BlackandGrey_Change, .ColumnBlock4 > ul > .Oldschool_Change, .ColumnBlock4 > ul > .Font_Change{
+    width: 380px;
+    height: 380px;
+}
+
 
 
 /* ================================================== MediaQuery ================================================== */

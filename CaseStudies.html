@@ -15,6 +15,13 @@
     <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
         integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
+    <!-- 使用 js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <!-- hover-effect js -->
+    <script src="./Fashion-Landing-Page-master-master/hover-effect.umd.js"></script>
+
 </head>
 
 <body>
@@ -60,9 +67,9 @@
                     <p>- TRADITIONAL -</p>
                 </li>
 
-                <li>
-                    <img src="./img/Traditional/3-2.jpg" alt="">
-                    <p>日式傳統 | 菊花蕊<br><br>300 x 300 (mm)</p>
+                <li class="Traditional_Change">
+                    <!-- <img src="./img/Traditional/3-2.jpg" alt=""> -->
+                    <!-- <p>日式傳統 | 菊花蕊<br><br>300 x 300 (mm)</p> -->
                 </li>
 
                 <li>
@@ -77,9 +84,9 @@
                     <p>BLACK AND GREY</p>
                 </li>
 
-                <li>
-                    <img src="./img/BlackandGrey/3-2.jpg" alt="">
-                    <p>黑白寫實 | 七龍珠:佛利札<br><br>500 x 500 (mm)</p>
+                <li class="BlackandGrey_Change">
+                    <!-- <img src="./img/BlackandGrey/3-2.jpg" alt=""> -->
+                    <!-- <p>黑白寫實 | 七龍珠:佛利札<br><br>500 x 500 (mm)</p> -->
                 </li>
 
                 <li>
@@ -93,9 +100,9 @@
                     <p>-- OLDSCHOOL --</p>
                 </li>
 
-                <li>
-                    <img src="./img/Oldschool/3-2.jpg" alt="">
-                    <p>美式傳統 | 嗜肉屠夫<br><br>200 x 200 (mm)</p>
+                <li class="Oldschool_Change">
+                    <!-- <img src="./img/Oldschool/3-2.jpg" alt=""> -->
+                    <!-- <p>美式傳統 | 嗜肉屠夫<br><br>200 x 200 (mm)</p> -->
                 </li>
 
                 <li>
@@ -109,9 +116,9 @@
                     <p>------ FONT ------</p>
                 </li>
 
-                <li>
-                    <img src="./img/Font/2-2.jpg" alt="">
-                    <p>草寫 | 人生充實: 人生樂章<br><br>50 x 600 (mm)</p>
+                <li class="Font_Change">
+                    <!-- <img src="./img/Font/2-2.jpg" alt=""> -->
+                    <!-- <p>草寫 | 人生充實: 人生樂章<br><br>50 x 600 (mm)</p> -->
                 </li>
 
                 <li>
@@ -191,6 +198,53 @@
 
     <!-------------------------------- Font Awesome for icons -------------------------------->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> -->
+
+    <script>
+        new hoverEffect({
+            parent: document.querySelector('.Traditional_Change'),
+            intensity: 0.6,
+            image1: './Fashion-Landing-Page-master-master/images/T3-2.jpg',//第一張圖片
+            image2: './Fashion-Landing-Page-master-master/images/T2-2.jpg', //第二張圖片
+            displacementImage: './Fashion-Landing-Page-master-master/images/displacement/6.jpg',
+            // displacementImage: './images/displacement/12.jpg',
+            // displacementImage: './images/displacement/14.jpg',
+            // displacementImage: './images/displacement/16.jpg',
+            imagesRatio: 380 / 300
+        })
+    </script>
+
+    <script>
+        new hoverEffect({
+            parent: document.querySelector('.BlackandGrey_Change'),
+            intensity: 0.6,
+            image1: './Fashion-Landing-Page-master-master/images/B3-2.jpg',//第一張圖片
+            image2: './Fashion-Landing-Page-master-master/images/B6-2.jpg', //第二張圖片
+            displacementImage: './Fashion-Landing-Page-master-master/images/displacement/6.jpg',
+            imagesRatio: 380 / 300
+        })
+    </script>
+
+    <script>
+        new hoverEffect({
+            parent: document.querySelector('.Oldschool_Change'),
+            intensity: 0.6,
+            image1: './Fashion-Landing-Page-master-master/images/O3-2.jpg',//第一張圖片
+            image2: './Fashion-Landing-Page-master-master/images/O5-2.jpg', //第二張圖片
+            displacementImage: './Fashion-Landing-Page-master-master/images/displacement/6.jpg',
+            imagesRatio: 380 / 300
+        })
+    </script>
+
+    <script>
+        new hoverEffect({
+            parent: document.querySelector('.Font_Change'),
+            intensity: 0.6,
+            image1: './Fashion-Landing-Page-master-master/images/F2-2.jpg',//第一張圖片
+            image2: './Fashion-Landing-Page-master-master/images/F3-2.jpg', //第二張圖片
+            displacementImage: './Fashion-Landing-Page-master-master/images/displacement/6.jpg',
+            imagesRatio: 380 / 300
+        })
+    </script>
 </body>
 
 </html>

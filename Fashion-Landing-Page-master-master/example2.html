@@ -19,8 +19,10 @@
         }
 
         .example {
-          width: 500px;
-          height: 500px;
+          /* width: 500px; */
+          /* height: 500px; */
+          width: 380px;
+          height: 380px;
         }
 
     </style>
@@ -33,14 +35,24 @@
     <div class="example">
       <!-- 不用放圖 -->
     </div>
+
+    <div class="ColumnItem1">
+        <a href="CaseStudies.html">
+            <h2>日式傳統<br>Traditional</h2>
+        </a>
+    </div>
     
     <script>
         new hoverEffect({
             parent: document.querySelector('.example'),
             intensity: 0.6,
-            image1: './images/Img1.jpg',//第一張圖片
-            image2: './images/Img2.jpg', //第二張圖片
-            displacementImage: './images/displacement/2.jpg', //hover 效果，可以自己換圖
+            image1: './images/4-2.jpg',//第一張圖片
+            image2: './images/4-2-1.png', //第二張圖片
+            displacementImage: './images/displacement/6.jpg',
+            // displacementImage: './images/displacement/12.jpg',
+
+            // displacementImage: './images/displacement/14.jpg',
+            // displacementImage: './images/displacement/16.jpg',
             imagesRatio: 380 / 300
         })
     </script>

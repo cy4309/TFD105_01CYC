@@ -59,6 +59,25 @@
 
 /* ============================================= Arms ============================================= */
 
+.Demo{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Demo > li > .Line3{
+    width: 360px;
+    height: 8px;
+    background-color: white;
+}
+
+.Demo > li > h2{
+    width: 360px;
+    text-align: center;
+}
+
+
 
 .js-slide{
     opacity: 0;
@@ -76,12 +95,12 @@
 
 #jarall{
     -webkit-appearance: none;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
-.jar{
+/* .jar{
     margin-bottom: 100px;
-}
+} */
 
 /* ---------------------------------------- ColumnBlock7 ---------------------------------------- */
 /* .ColumnBlock7{} */
@@ -89,13 +108,11 @@
 /* .ColumnItem10{} */
 
 
-
-
 /* ============================================= Brief/ Artists ============================================= */
 
 /* ---------------------------------------- ColumnBlock8, 9, 10 ---------------------------------------- */
 .ColumnBlock8, .ColumnBlock9, .ColumnBlock10{
-    margin: 100px 0;
+    margin: 200px 0;
 }
 
 
@@ -255,6 +272,14 @@ button:hover{
         margin: 0 auto;
     }
 
+    /* ---------------------------------------- Arms ---------------------------------------- */
+    .Demo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
     /* ---------------------------------------- Button ---------------------------------------- */
 
     .ColumnBlock9 > ul > li:nth-child(11) > a > button{
@@ -379,8 +404,15 @@ button:hover{
         margin: 0 auto;
     }
 
-    /* ---------------------------------------- Button ---------------------------------------- */
+    /* ---------------------------------------- Arms ---------------------------------------- */
+    .Demo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 
+    /* ---------------------------------------- Button ---------------------------------------- */
     .ColumnBlock9 > ul > li:nth-child(11) > a > button{
         width: 270px;
     }
@@ -504,6 +536,14 @@ button:hover{
         /* width: 100%; */
         width: 100%;
         margin: 0 auto;
+    }
+
+    /* ---------------------------------------- Arms ---------------------------------------- */
+    .Demo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
     /* ---------------------------------------- Button ---------------------------------------- */
@@ -635,6 +675,13 @@ button:hover{
         margin: 0 auto;
     }
 
+    /* ---------------------------------------- Arms ---------------------------------------- */
+    .Demo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
     
     /* ---------------------------------------- Button ---------------------------------------- */
 
