@@ -1,321 +1,163 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-</head>
-
-<body>
-
-    <button id="btn">按我</button>
-    <div id="lightbox">
-        <img src="https://api.fnkr.net/testimg/100x100/a00/FFF/?text=LightBox">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, pariatur! Alias aspernatur, animi
-            adipisci amet similique ipsam, incidunt laborum totam!</p>
-    </div>
-
-
-
-    <script type="text/javascript">
-        var myFunction = (function () {
-            var $window = $(window);
-            var $newBox = $('<div class="newBox"></div>');
-            var $newContent = $('<div class="newBoxContent"></div>');
-            var $newClose = $('<button class="newBoxClose">關掉</button>');
-            $newBox.append($newContent, $newClose);
-
-            $newClose.on('click', function () {
-                myFunction.close();
-            });
-
-            return {
-                center: function () {
-                    var dtop = Math.max($window.height() - $newBox.outerHeight(), 0) / 2;
-                    var dleft = Math.max($window.width() - $newBox.outerWidth(), 0) / 2;
-                    $newBox.css({
-                        top: dtop + $window.scrollTop(),
-                        left: dleft + $window.scrollLeft()
-                    });
-                },
-                open: function (data) {
-                    $newContent.empty().append(data.content);
-                    $newBox.css({
-                        width: data.width || 'auto',
-                        height: data.height || 'auto'
-                    }).appendTo('body');
-
-                    myFunction.center();
-                    $window.on('resize', myFunction.center);
-                },
-                close: function () {
-                    $newContent.empty();
-                    $newBox.detach();
-                    $window.off('resize', myFunction.center);
-                }
-            }
-        }());
-    </script>
-
-
-    <script type="text/javascript">
-        (function () {
-            var $newContent = $('#lightbox').detach();
-            $('#btn').on('click', function () {
-                myFunction.open({
-                    content: $newContent,
-                    width: 340,
-                    height: 300
-                })
-            });
-        }());
-    </script>
-
-    
-</body>
-
-</html> -->
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Accessories</title>
-    <link rel="stylesheet" href="./css/style_Model.css">
-    <link rel="stylesheet" href="./css/style_Accessories.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
-        integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
+        body {
+            margin: 0;
+        }
+
+        .top_block {
+            /* background-color: blue; */
+            width: 100%;
+            /* height: 200vh; */
+            position: relative;
+            z-index: 2;
+        }
+
+        .top_block>img {
+            width: 1200px;
+        }
+
+
+        .bottom_block {
+            background-color: gray;
+            height: 200vh;
+            position: relative;
+            z-index: 2;
+        }
+
+        .bottom_block>img {
+            width: 1200px;
+        }
+
+
+        /* 中間區域 */
+        .middle_block {
+            border: 1px solid orange;
+            height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+
+        .middle_block .middle_content {
+            position: fixed;
+            border: 1px solid red;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+        }
+
+        /* img.the_img {
+            width: 100%;
+        } */
+
+
+        .TextBlock1 {
+            width: 900px;
+            height: 1200px;
+            background-color: rgb(0, 0, 0, .5);
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+
+        }
+
+        /* .TextBlock1 > h2{
+        text-align: left;
+        } */
+
+        .TextBlock1>h2:nth-child(even) {
+            text-align: right;
+        }
+
+        .TextBlock1>p {
+            text-align: right;
+            margin-top: 50px;
+        }
+    </style>
 </head>
+
 
 <body>
 
-    <div class="Wrapper">
-        <nav>
-            <!-------------------------------- TOP -------------------------------->
-            <div class="Top">
-                <!-------------------------------- LOGO -------------------------------->
-                <div class="Logo_Image">
-                    <a href="MainPage.html"><img src="./img/Resources/CYC_Logo-1.png" alt=""></a>
-                </div>
+    <div class="top_block">
+        <img src="./img/Resources/DSC_0056.JPG" alt="">
+    </div>
 
-                <div class="Logo_Text">
-                    <a href="MainPage.html">
-                        <h1>CYC TATTOO STUDIO.INK</h1>
-                    </a>
-                </div>
+    <div class="middle_block">
 
-                <!-------------------------------- HamList -------------------------------->
-                <div class="Nav1">
-                    <ul>Accessories→
-                        <li><a href="Category.html"> Category </a></li>
-                        <li><a href="AboutUs.html"> About Us </a></li>
-                        <li><a href="Artists.html"> Artists </a></li>
-                        <li><a href="CaseStudies.html"> CaseStudies </a></li>
-                        <li><a href="Accessories.html"> Accessories </a></li>
-                        <li><a href="Appointment.html"> Appointment </a></li>
+        <div class="middle_content">
 
-                    </ul>
+            <div class="TextBlock1">
+                <h2>日式傳統 Traditional ---</h2><br><br>
+                <h2>--- 寫實 Black and Grey</h2><br><br>
+                <h2>美式傳統 Oldschool ---</h2><br><br>
+                <h2>--- 草寫 Font</h2><br><br>
 
-                </div>
-
-            </div>
-        </nav>
-
-        <div class="Main">
-            <!-------------------------------- ColumnBlock5 -------------------------------->
-            <div class="ColumnBlock5">
-                <div class="ColumnItem5">
-                    <h3>
-                        GOODOLDDAYZ<br>
-                        聯名T - SHIRT<br>
-                        $1000
-                    </h3>
-
-                    <a href="#">
-                        <button id="btn">
-                            <h3> 立即下訂 </h3>
-                        </button>
-                    </a>
-                </div>
-
-                <div class="ColumnItem6">
-                    <h3>
-                        GOODOLDDAYZ<br>
-                        FEAT.<br>
-                        MESSWITH<br>
-                        聯名海報<br>
-                        $1000
-                    </h3>
-
-                    <a href="#"><button id="btn">
-                            <h3> 立即下訂 </h3>
-                        </button></a>
-                </div>
-
-                <div class="ColumnItem7">
-                    <h3>
-                        GOODOLDDAYZ<br>
-                        聯名海報<br>
-                        $1000
-                    </h3>
-
-                    <a href="#"><button id="btn">
-                            <h3> 立即下訂 </h3>
-                        </button></a>
-                </div>
-
-                <div class="ColumnItem8">
-                    <h3>
-                        GOODOLDDAYZ<br>
-                        聯名貼紙<br>
-                        $100
-                    </h3>
-
-                    <a href="#"><button id="btn">
-                            <h3> 立即下訂 </h3>
-                        </button></a>
-                </div>
+                <p>CYC TATTOO STUDIO
+                    致力於提供專業的刺青服務，<br><br>我們熱愛所有有關地下文化的故事，<br><br>透過刺青記錄著我們對畫畫的喜愛，<br><br>歡迎寫信諮詢刺青的大小事，<br><br>或是來聊聊屬於你自己的故事。
+                </p>
 
             </div>
         </div>
-
-
-        <!-------------------------------- Footer -------------------------------->
-        <footer>
-            <div class="Footerblock">
-
-                <!-------------------------------- Footer1 -------------------------------->
-                <div class="Footer1">
-                    <h2> Contact Us
-                        <a href="https://www.facebook.com/goodolddayzinc"><i class="fab fa-facebook-square"></i></a>
-                        <a href="https://www.instagram.com/goodolddayz.inc/"><i class="fab fa-instagram-square"></i></a>
-                    </h2>
-                    <div class="Line1"></div>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;營業時間24小時/ 7天</p>
-                    <h3>台北市中正區晉江街28號B1</h3>
-                </div>
-
-                <!-------------------------------- Footer2 -------------------------------->
-                <div class="Footer2">
-                    <div class="Nav2">
-                        <ul>
-                            <li>
-                                <a href="Category.html"> Category </a>
-                            </li>
-
-                            <li>
-                                <a href="AboutUs.html"> About Us </a>
-                            </li>
-
-                            <li>
-                                <a href="Artists.html"> Artists </a>
-                            </li>
-
-                            <li>
-                                <a href="CaseStudies.html"> Case Studies </a>
-                            </li>
-
-                            <li>
-                                <a href="Accessories.html"> Accessories </a>
-                            </li>
-
-                            <li>
-                                <a href="Appointment.html"> Appointment </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="iiframe">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1807.6242630115119!2d121.5208662440875!3d25.02563861936392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a990a417a28d%3A0x3f6316533fee6eea!2zMTAw5Y-w5YyX5biC5Lit5q2j5Y2A5pmJ5rGf6KGXMTjlt7cyOOiZn2Ix!5e0!3m2!1szh-TW!2stw!4v1643766097313!5m2!1szh-TW!2stw"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>
-                <!-------------------------------- Footer3 -------------------------------->
-                <div class="Footer3">
-                    <div class="Line2"></div>
-                    <p>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。</p>
-                </div>
-            </div>
-        </footer>
-
     </div>
 
+    <div class="bottom_block">
+        <img src="./img/Resources/DSC_0041-1.jpg" alt="">
+    </div>
 
-    <!-------------------------------- Font Awesome for icons -------------------------------->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> -->
-    
-    <script type="text/javascript"> //定義
-        var myFunction = (function () {
-            //加錢字號避免撞名
-            var $window = $(window);
-            var $newBox = $('<div class="newBox"></div>');
-            var $newContent = $('<div class="newBoxContent"></div>');
-            var $newClose = $('<button class="newBoxClose">關掉</button>');
-            $newBox.append($newContent, $newClose);//一次加兩個孩子
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
 
-            $newClose.on('click', function () {
-                myFunction.close();
-            });
+        // jQuery 版本
+        $(window).on("load", function () { // 圖片載入完成之後觸發
+            setting_height();
+        });
 
-            return {
-                center: function () {
-                    //從兩數中選比較高者（避免負數）	//含外距
-                    var dtop = Math.max($window.height() - $newBox.outerHeight(), 0) / 2;
-                    var dleft = Math.max($window.width() - $newBox.outerWidth(), 0) / 2;
-                    $newBox.css({
-                        top: dtop + $window.scrollTop(),
-                        left: dleft + $window.scrollLeft()
-                    });
-                },
-                open: function (data) {
-                    //刪掉所有兒子 //加上執行時輸入的物件的content屬性
-                    $newContent.empty().append(data.content);
-                    $newBox.css({
-                        width: data.width || 'auto', //執行時沒輸入就代入auto
-                        height: data.height || 'auto'
-                    }).appendTo('body'); //當body的最後一個新兒子
+        $(window).on("resize", function () { // 螢幕視窗大小改變時觸發
+            setting_height();
+        });
 
-                    myFunction.center(); //若resize事件發生，就執行剛剛定義好的center方法
-                    $window.on('resize', myFunction.center);
-                },
-                close: function () {
-                    $newContent.empty();
-                    $newBox.detach();
-                    $window.off('resize', myFunction.center);//監聽器關掉
-                }
-            }
-        }());
-    </script>
+        function setting_height() {
+            // 設定 div.middle_block 的高度
+            $("div.middle_block").css("height", $("div.middle_content").outerHeight());
+        }
 
 
-    <script type="text/javascript"> //執行
-        (function () {
-            var $newContent = $('#lightbox').detach();
-            $('#btn').on('click', function () {
-                myFunction.open({
-                    content: $newContent,
-                    width: 340,
-                    height: 300
-                })
-            });
-        }());
+        // JavaScript 版本
+        /*
+        window.addEventListener("load", function(){
+          setting_height();
+        });
+        
+        window.addEventListener("resize", function(){
+          setting_height();
+        });
+        
+        function setting_height(){
+          // 設定 div.middle_block 的高度
+          var middle_block = document.getElementsByClassName("middle_block")[0];
+          var middle_content = document.getElementsByClassName("middle_content")[0];
+          middle_block.style.height = middle_content.offsetHeight + "px";
+        }
+        
+        */
     </script>
 
 </body>
+
 
 </html>

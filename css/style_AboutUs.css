@@ -1,18 +1,51 @@
 
-/* ================================================== ColumnBlock3 ================================================== */
-.ColumnBlock3{
-    background-image: url(../img/Resources/9-2-2.png);
+/* ================================================== Content ================================================== */
+
+.top_block{
+    /* background-color: blue; */
     width: 100%;
-    height: 1908px;
-    display: flex;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-position: 50%;
+    /* height: 200vh; */
+    position: relative;
+    z-index: 2;
 }
 
+.bottom_block{
+    /* background-color: gray; */
+    /* height: 200vh; */
+    position: relative;
+    z-index: 2;
+}
+
+.bottom_block > img, .top_block > img{
+    width: 100%;
+}
+
+
+/* 中間區域 */
+.middle_block{
+    /* border: 1px solid orange; */
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+
+.middle_block .middle_content{
+    position: fixed;
+    /* border: 1px solid red; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+/* img.the_img {
+    width: 100%;
+} */
+
+
 .TextBlock1{
-    width: 900px;
-    height: 1200px;
+    /* width: 900px; */
+    /* height: 800px; */
     background-color: rgb(0, 0, 0, .5);
     margin: 0 auto;
     display: flex;
@@ -23,15 +56,21 @@
 
 }
 
-/* .TextBlock1 > h2{
-    text-align: left;
-} */
+/* .TextBlock1 > h2{} */
 
-.TextBlock1 > h2:nth-child(even){
+.TextBlock1 > h2:nth-child(even) {
     text-align: right;
 }
 
-.TextBlock1 > p{
+.TextBlock1 > p {
     text-align: right;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+}
+
+footer{
+    margin-top: 0px;
+}
+
+img{
+    display: block;
 }

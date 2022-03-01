@@ -51,21 +51,34 @@
             </div>
 
         </nav>
-        <!-------------------------------- ColumnBlock3 -------------------------------->
-        <div class="ColumnBlock3">
 
-            <div class="TextBlock1">
-                <h2>日式傳統 Traditional ---</h2><br><br>
-                <h2>--- 寫實 Black and Grey</h2><br><br>
-                <h2>美式傳統 Oldschool ---</h2><br><br>
-                <h2>--- 草寫 Font</h2><br><br>
 
-                <p>CYC TATTOO STUDIO
-                    致力於提供專業的刺青服務，<br><br>我們熱愛所有有關地下文化的故事，<br><br>透過刺青記錄著我們對畫畫的喜愛，<br><br>歡迎寫信諮詢刺青的大小事，<br><br>或是來聊聊屬於你自己的故事。
-                </p>
+        <!-------------------------------- Content -------------------------------->
 
+        <div class="top_block">
+            <img src="./img/Resources/DSC_0056.JPG" alt="">
+        </div>
+
+        <div class="middle_block">
+
+            <div class="middle_content">
+
+                <div class="TextBlock1">
+                    <h2>日式傳統 Traditional ---</h2><br><br>
+                    <h2>--- 寫實 Black and Grey</h2><br><br>
+                    <h2>美式傳統 Oldschool ---</h2><br><br>
+                    <h2>--- 草寫 Font</h2><br><br>
+
+                    <p>CYC TATTOO STUDIO
+                        致力於提供專業的刺青服務，<br><br>我們熱愛所有有關地下文化的故事，<br><br>透過刺青記錄著我們對畫畫的喜愛，<br><br>歡迎寫信諮詢刺青的大小事，<br><br>或是來聊聊屬於你自己的故事。
+                    </p>
+
+                </div>
             </div>
+        </div>
 
+        <div class="bottom_block">
+            <img src="./img/Resources/DSC_0041-1.jpg" alt="">
         </div>
 
 
@@ -117,7 +130,7 @@
                             </li>
                         </ul>
                     </div>
-                
+
 
                     <div class="iiframe">
                         <iframe
@@ -143,6 +156,43 @@
 
     <!-------------------------------- Font Awesome for icons -------------------------------->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+        // jQuery 版本
+        $(window).on("load", function () { // 圖片載入完成之後觸發
+            setting_height();
+        });
+
+        $(window).on("resize", function () { // 螢幕視窗大小改變時觸發
+            setting_height();
+        });
+
+        function setting_height() {
+            // 設定 div.middle_block 的高度
+            $("div.middle_block").css("height", $("div.middle_content").outerHeight());
+        }
+
+
+        // JavaScript 版本
+        /*
+        window.addEventListener("load", function(){
+          setting_height();
+        });
+        
+        window.addEventListener("resize", function(){
+          setting_height();
+        });
+        
+        function setting_height(){
+          // 設定 div.middle_block 的高度
+          var middle_block = document.getElementsByClassName("middle_block")[0];
+          var middle_content = document.getElementsByClassName("middle_content")[0];
+          middle_block.style.height = middle_content.offsetHeight + "px";
+        }
+        
+        */
+    </script>
 
 </body>
 
