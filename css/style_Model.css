@@ -120,7 +120,8 @@ nav{
     height: 20px;
     position: fixed;
     top: 48px;
-    right: 48px; 
+    right: 48px;
+    cursor: pointer;
 }
 
 .Nav1 > ul > li{
@@ -618,7 +619,7 @@ nav{
         justify-content: space-between;
         text-align: right;
     }
-    
+
     .Footer3 > p{
         font-size: 10px;
         text-align: center;

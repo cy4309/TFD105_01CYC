@@ -15,6 +15,8 @@
     <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
         integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -59,28 +61,37 @@
 
             <!-------------------------------- ColumnBlock1 -------------------------------->
             <div class="ColumnBlock1">
-                <div class="ColumnItem1">
-                    <a href="CaseStudies.html">
-                        <h2>日式傳統<br>Traditional</h2>
-                    </a>
+
+                <div data-aos="fade-down-right">
+                    <div class="ColumnItem1">
+                        <a href="CaseStudies.html">
+                            <h2>日式傳統<br>Traditional</h2>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="ColumnItem2">
-                    <a href="CaseStudies.html">
-                        <h2>寫實<br>Black and Grey</h2>
-                    </a>
+                <div data-aos="fade-up-right">
+                    <div class="ColumnItem2">
+                        <a href="CaseStudies.html">
+                            <h2>寫實<br>Black and Grey</h2>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="ColumnItem3">
-                    <a href="CaseStudies.html">
-                        <h2>美式傳統<br>Oldschool</h2>
-                    </a>
+                <div data-aos="fade-down-left">
+                    <div class="ColumnItem3">
+                        <a href="CaseStudies.html">
+                            <h2>美式傳統<br>Oldschool</h2>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="ColumnItem4">
-                    <a href="CaseStudies.html">
-                        <h2>草寫<br>Font</h2>
-                    </a>
+                <div data-aos="fade-up-left">
+                    <div class="ColumnItem4">
+                        <a href="CaseStudies.html">
+                            <h2>草寫<br>Font</h2>
+                        </a>
+                    </div>
                 </div>
 
             </div>
@@ -161,6 +172,20 @@
 
     <!-------------------------------- Font Awesome for icons -------------------------------->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> -->
+
+    <!-------------------------------- AOS -------------------------------->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        //自定參數呼叫
+        $(function () {
+            AOS.init({
+                offset: 200,
+                easing: 'ease-in-sine'
+            });
+        })
+    </script>
+
 </body>
 
 </html>
