@@ -193,6 +193,11 @@ button:hover{
         margin: 0 auto;
     }
 
+    img, iframe, .ColumnItem1, .ColumnItem2, .ColumnItem3, .ColumnItem4, .ColumnItem5, .ColumnItem6, .ColumnItem7, .ColumnItem8{
+        /* -webkit-filter:grayscale(1); */
+        filter:grayscale(0);
+    }
+
     /* ---------------------------------------- LOGO ---------------------------------------- */
     .Logo > h1{
         font-size: 20px;
@@ -276,6 +281,11 @@ button:hover{
     .Main{
         width: 100%;
         margin: 0 auto;
+    }
+
+    img, iframe, .ColumnItem1, .ColumnItem2, .ColumnItem3, .ColumnItem4, .ColumnItem5, .ColumnItem6, .ColumnItem7, .ColumnItem8{
+        /* -webkit-filter:grayscale(1); */
+        filter:grayscale(0);
     }
 
     /* ---------------------------------------- LOGO ---------------------------------------- */
@@ -365,6 +375,11 @@ button:hover{
         margin: 0 auto;
     }
 
+    img, iframe, .ColumnItem1, .ColumnItem2, .ColumnItem3, .ColumnItem4, .ColumnItem5, .ColumnItem6, .ColumnItem7, .ColumnItem8{
+        /* -webkit-filter:grayscale(1); */
+        filter:grayscale(0);
+    }
+
     /* ---------------------------------------- LOGO ---------------------------------------- */
     .Logo > h1{
         font-size: 20px;
@@ -451,6 +466,11 @@ button:hover{
     .Main{
         width: 100%;
         margin: 0 auto;
+    }
+
+    img, iframe, .ColumnItem1, .ColumnItem2, .ColumnItem3, .ColumnItem4, .ColumnItem5, .ColumnItem6, .ColumnItem7, .ColumnItem8{
+        /* -webkit-filter:grayscale(1); */
+        filter:grayscale(0);
     }
 
     /* ---------------------------------------- HamList ---------------------------------------- */

@@ -280,6 +280,11 @@ button:hover{
         margin: 0 auto;
     }
 
+    img, iframe, .ColumnItem1, .ColumnItem2, .ColumnItem3, .ColumnItem4, .ColumnItem5, .ColumnItem6, .ColumnItem7, .ColumnItem8{
+        /* -webkit-filter:grayscale(1); */
+        filter:grayscale(0);
+    }
+
     /* ---------------------------------------- Arms ---------------------------------------- */
     .Demo{
         display: flex;
@@ -427,6 +432,11 @@ button:hover{
         /* width: 100%; */
         width: 100%;
         margin: 0 auto;
+    }
+
+    img, iframe, .ColumnItem1, .ColumnItem2, .ColumnItem3, .ColumnItem4, .ColumnItem5, .ColumnItem6, .ColumnItem7, .ColumnItem8{
+        /* -webkit-filter:grayscale(1); */
+        filter:grayscale(0);
     }
 
     /* ---------------------------------------- Arms ---------------------------------------- */
@@ -578,6 +588,11 @@ button:hover{
         /* width: 100%; */
         width: 100%;
         margin: 0 auto;
+    }
+
+    img, iframe, .ColumnItem1, .ColumnItem2, .ColumnItem3, .ColumnItem4, .ColumnItem5, .ColumnItem6, .ColumnItem7, .ColumnItem8{
+        /* -webkit-filter:grayscale(1); */
+        filter:grayscale(0);
     }
 
     /* ---------------------------------------- Arms ---------------------------------------- */
@@ -733,6 +748,11 @@ button:hover{
         /* width: 100%; */
         width: 100%;
         margin: 0 auto;
+    }
+
+    img, iframe, .ColumnItem1, .ColumnItem2, .ColumnItem3, .ColumnItem4, .ColumnItem5, .ColumnItem6, .ColumnItem7, .ColumnItem8{
+        /* -webkit-filter:grayscale(1); */
+        filter:grayscale(0);
     }
 
     /* ---------------------------------------- Arms ---------------------------------------- */

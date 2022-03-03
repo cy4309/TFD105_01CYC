@@ -133,6 +133,11 @@
         padding: 5px;
     }
 
+    img, iframe, .ColumnItem1, .ColumnItem2, .ColumnItem3, .ColumnItem4, .ColumnItem5, .ColumnItem6, .ColumnItem7, .ColumnItem8{
+        /* -webkit-filter:grayscale(1); */
+        filter:grayscale(0);
+    }
+
     /* ================================================== ColumnBlock1 ================================================== */
     .ColumnBlock1{
         height: 100%;
@@ -277,7 +282,11 @@
         width: 100%;
         margin: 0 auto;
     }
-    
+
+    img, iframe, .ColumnItem1, .ColumnItem2, .ColumnItem3, .ColumnItem4, .ColumnItem5, .ColumnItem6, .ColumnItem7, .ColumnItem8{
+        /* -webkit-filter:grayscale(1); */
+        filter:grayscale(0);
+    }
     
     /* ================================================== ColumnBlock1 ================================================== */
     .ColumnBlock1{
@@ -415,6 +424,11 @@
     .Main{
         width: 100%;
         margin: 0 auto;
+    }
+
+    img, iframe, .ColumnItem1, .ColumnItem2, .ColumnItem3, .ColumnItem4, .ColumnItem5, .ColumnItem6, .ColumnItem7, .ColumnItem8{
+        /* -webkit-filter:grayscale(1); */
+        filter:grayscale(0);
     }
     
     /* ================================================== ColumnBlock1 ================================================== */
@@ -554,6 +568,11 @@
     .Main{
         width: 100%;
         margin: 0 auto;
+    }
+
+    img, iframe, .ColumnItem1, .ColumnItem2, .ColumnItem3, .ColumnItem4, .ColumnItem5, .ColumnItem6, .ColumnItem7, .ColumnItem8{
+        /* -webkit-filter:grayscale(1); */
+        filter:grayscale(0);
     }
     
     /* ================================================== ColumnBlock1 ================================================== */
