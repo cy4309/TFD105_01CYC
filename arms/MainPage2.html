@@ -1,103 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <title>Index.MainPage</title>
-    <link rel="stylesheet" href="./css/style_Model.css">
-    <link rel="stylesheet" href="./css/style_Arms.css">
-    <link rel="stylesheet" href="./css/style_MainPage.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style_Model.css" />
+    <link rel="stylesheet" href="./css/style_Arms.css" />
+    <link rel="stylesheet" href="./css/style_MainPage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
-        integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
     <!-- <link href="https://cdn.bootcss.com/fullPage.js/2.9.5/jquery.fullpage.css" rel="stylesheet"> -->
 
-    	<!-- tweenmax動畫效果 -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <!-- tweenmax動畫效果 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-------------------------------- Video1 -------------------------------->
     <div class="VideoBlock1">
-        <video autoplay loop playsinline muted>
-            <source src="./img/video/123.mp4" type="video/mp4">
-        </video>
+      <video autoplay loop playsinline muted>
+        <source src="./img/video/123.mp4" type="video/mp4" />
+      </video>
 
-        <!-------------------------------- LOGO -------------------------------->
-        <div class="Logo">
-            <!-- <div class="Logo_InTheVideo"></div> -->
-            <a href="MainPage.html">
-                <h1>CYC TATTOO STUDIO.INK</h1>
-                <img src="./img/Resources/CYC_Logo-1.png" alt="">
-            </a>
-        </div>
+      <!-------------------------------- LOGO -------------------------------->
+      <div class="Logo">
+        <!-- <div class="Logo_InTheVideo"></div> -->
+        <a href="MainPage.html">
+          <h1>CYC TATTOO STUDIO.INK</h1>
+          <img src="./img/Resources/CYC_Logo-1.png" alt="" />
+        </a>
+      </div>
 
-        <!-------------------------------- HamList -------------------------------->
-        <div class="Nav1">
-            <ul>StoryBegin→
-                <li><a href="Category.html"> Category </a></li>
-                <li><a href="AboutUs.html"> About Us </a></li>
-                <li><a href="Artists.html"> Artists </a></li>
-                <li><a href="CaseStudies.html"> CaseStudies </a></li>
-                <li><a href="Accessories.html"> Accessories </a></li>
-                <li><a href="Appointment.html"> Appointment </a></li>
-            </ul>
-        </div>
-
+      <!-------------------------------- HamList -------------------------------->
+      <div class="Nav1">
+        <ul>
+          StoryBegin→
+          <li><a href="Category.html"> Category </a></li>
+          <li><a href="AboutUs.html"> About Us </a></li>
+          <li><a href="Artists.html"> Artists </a></li>
+          <li><a href="CaseStudies.html"> CaseStudies </a></li>
+          <li><a href="Accessories.html"> Accessories </a></li>
+          <li><a href="Appointment.html"> Appointment </a></li>
+        </ul>
+      </div>
     </div>
 
     <!-------------------------------- Wrapper -------------------------------->
     <div class="Wrapper">
+      <!-------------------------------- 刺青輪播 -------------------------------->
 
-
-
-
-        <!-------------------------------- 刺青輪播 -------------------------------->
-
-        <!-- 刺青套件開始 -->
-        <div id="trigger02"></div>
-        <div class="o-product__before-after js-slide js-slide-i js-active">
-            <!-- ---暫時隱藏---
+      <!-- 刺青套件開始 -->
+      <div id="trigger02"></div>
+      <div class="o-product__before-after js-slide js-slide-i js-active">
+        <!-- ---暫時隱藏---
             <div class="say_choose">
             <img src="img/icon_a.png" alt="">
             <p> Choose the toast you like</p>
             </div> -->
 
-            <div class="c-before-after" id="jarall">
-                <div class="c-before-after__contents">
-                    <div class="twentytwenty-wrapper twentytwenty-horizontal">
-                        <div class="js-twentytwenty1 twentytwenty-container" style="height: 434px;">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="./img/Arms/1.png" id="tt">
-                                <source media="(max-width: 767px)" srcset="./img/Arms/1.png" id="tt_mb"><img
-                                    src="./img/Arms/1.png" alt="" draggable="false" class="twentytwenty-before"
-                                    style="clip: rect(0px, 500px, 434px, 0px);">
+        <div class="c-before-after" id="jarall">
+          <div class="c-before-after__contents">
+            <div class="twentytwenty-wrapper twentytwenty-horizontal">
+              <div class="js-twentytwenty1 twentytwenty-container" style="height: 434px">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./img/Arms/1.png" id="tt" />
+                  <source media="(max-width: 767px)" srcset="./img/Arms/1.png" id="tt_mb" />
+                  <img src="./img/Arms/1.png" alt="" draggable="false" class="twentytwenty-before" style="clip: rect(0px, 500px, 434px, 0px)" />
 
-                                <!-- ---圖內logo---
+                  <!-- ---圖內logo---
                             <div class="jam_bake">
                                 <div class="bake_btn" id="normal"><img src="img/icon_toast_n.png" alt="">normal</div>
                                 <div class="bake_btn this" id="bake"><img src="img/icon_toast_b.png" alt="">baked</div>
                             </div> -->
+                </picture>
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./img/Arms/6.png" id="tt_jam" />
+                  <source media="(max-width: 767px)" srcset="./img/Arms/6.png" id="tt_jam_mb" />
+                  <img src="./img/Arms/6.png" alt="" draggable="false" class="twentytwenty-after" style="clip: rect(0px, 1000px, 434px, 500px)" />
 
-                            </picture>
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="./img/Arms/6.png" id="tt_jam">
-                                <source media="(max-width: 767px)" srcset="./img/Arms/6.png" id="tt_jam_mb"><img
-                                    src="./img/Arms/6.png" alt="" draggable="false" class="twentytwenty-after"
-                                    style="clip: rect(0px, 1000px, 434px, 500px);">
-
-                                <!-- ---暫時隱藏---
+                  <!-- ---暫時隱藏---
                             <div class="jam_txt">
                                 <div class="btn white forjam">
                                     <h1 id="tit">草莓果醬</h1>
@@ -111,45 +100,62 @@
                                 <p>賞味期限: 冷藏3個月內風味最佳</p>
                                 <p>内 容 量：240g ± 3g</p>
                                 <div class="btn white"> -->
-                                <!-- ---本來就隱藏--- -->
-                                <!-- <a href="#">
+                  <!-- ---本來就隱藏--- -->
+                  <!-- <a href="#">
 										<div class="btn_arrow"></div >
 										<p>SEE MORE</p>
 									</a>  -->
-                                <!-- ---到這裡--- -->
-                                <!-- </div>
+                  <!-- ---到這裡--- -->
+                  <!-- </div>
                             </div> -->
-
-                            </picture>
-                            <div class="twentytwenty-handle" style="left: 500px;">
-                                <span class="twentytwenty-left-arrow"></span>
-                                <span class="twentytwenty-right-arrow"></span>
-                            </div>
-                        </div>
-                    </div>
+                </picture>
+                <div class="twentytwenty-handle" style="left: 500px">
+                  <span class="twentytwenty-left-arrow"></span>
+                  <span class="twentytwenty-right-arrow"></span>
                 </div>
-
+              </div>
             </div>
+          </div>
+        </div>
 
-
-            <div class="jamjar js-slide js-slide-i js-active">
-                <ul class="jar">
-                    <li><a ref=""><img src="./img/Arms/SourcesBar/6-2-1.png" alt="">
-                            <div class="shadow"></div><span class="thisjam"></span>
-                        </a></li>
-                    <li><a ref=""><img src="./img/Arms/SourcesBar/4-2-1.png" alt="">
-                            <div class="shadow"></div><span></span>
-                        </a></li>
-                    <li><a ref=""><img src="./img/Arms/SourcesBar/3-2-1.png" alt="">
-                            <div class="shadow"></div><span></span>
-                        </a></li>
-                    <li><a ref=""><img src="./img/Arms/SourcesBar/5-2-1.png" alt="">
-                            <div class="shadow"></div><span></span>
-                        </a></li>
-                    <li><a ref=""><img src="./img/Arms/SourcesBar/2-2-1.png" alt="">
-                            <div class="shadow"></div><span></span>
-                        </a></li>
-                    <!-- <li><a ref=""><img src="img/jam_4.png" alt="">
+        <div class="jamjar js-slide js-slide-i js-active">
+          <ul class="jar">
+            <li>
+              <a ref=""
+                ><img src="./img/Arms/SourcesBar/6-2-1.png" alt="" />
+                <div class="shadow"></div>
+                <span class="thisjam"></span>
+              </a>
+            </li>
+            <li>
+              <a ref=""
+                ><img src="./img/Arms/SourcesBar/4-2-1.png" alt="" />
+                <div class="shadow"></div>
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a ref=""
+                ><img src="./img/Arms/SourcesBar/3-2-1.png" alt="" />
+                <div class="shadow"></div>
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a ref=""
+                ><img src="./img/Arms/SourcesBar/5-2-1.png" alt="" />
+                <div class="shadow"></div>
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a ref=""
+                ><img src="./img/Arms/SourcesBar/2-2-1.png" alt="" />
+                <div class="shadow"></div>
+                <span></span>
+              </a>
+            </li>
+            <!-- <li><a ref=""><img src="img/jam_4.png" alt="">
                         <div class="shadow"></div><span></span>
                     </a></li>
                 <li><a ref=""><img src="img/jam_10.png" alt="">
@@ -164,213 +170,217 @@
                 <li><a ref=""><img src="img/jam_13.png" alt="">
                         <div class="shadow"></div><span></span>
                     </a></li> -->
-                </ul>
-            </div>
+          </ul>
+        </div>
+      </div>
+
+      <!-- test thisjam -->
+
+      <!-- 刺青套件結束 -->
+
+      <div class="Main">
+        <!-------------------------------- ColumnBlock8 -------------------------------->
+        <!-- Artists -->
+        <div class="ColumnBlock8">
+          <ul>
+            <!-- 1 -->
+            <li>
+              <div class="Line3"></div>
+            </li>
+
+            <!-- 2 -->
+            <li>
+              <h2>ARTISTS</h2>
+            </li>
+
+            <!-- 3 -->
+            <li>
+              <div class="Line3"></div>
+            </li>
+
+            <!-- 4 -->
+            <li><img src="./img/Resources/15-1.png" alt="" /></li>
+
+            <!-- 5轉7 -->
+            <li><img src="./img/Resources/15-2.png" alt="" /></li>
+
+            <!-- 6轉10 -->
+            <li><img src="./img/Resources/15-3.png" alt="" /></li>
+
+            <!-- 7轉5 -->
+            <li>
+              <p>Horikyo.<br /><br />Career since 2015.<br /><br />- Tradition / Oldschool -</p>
+            </li>
+
+            <!-- 8 -->
+            <li>
+              <p>Goodolddayz.<br /><br />Career since 2012.<br /><br />- Black and Grey / Font -</p>
+            </li>
+
+            <!-- 9轉11 -->
+            <li>
+              <p>BanDai 01.<br /><br />Career since 2021.<br /><br />- Tradition / Photography -</p>
+            </li>
+
+            <!-- 10轉6 -->
+            <li>
+              <a href="./Appointment.html"
+                ><button>
+                  <h3>Make an Appointment</h3>
+                </button></a
+              >
+            </li>
+
+            <!-- 11轉9 -->
+            <li>
+              <a href="./Appointment.html"
+                ><button>
+                  <h3>Make an Appointment</h3>
+                </button></a
+              >
+            </li>
+
+            <!-- 12 -->
+            <li>
+              <a href="./Appointment.html"
+                ><button>
+                  <h3>Make an Appointment</h3>
+                </button></a
+              >
+            </li>
+          </ul>
         </div>
 
-
-
-        <!-- test thisjam -->
-
-        <!-- 刺青套件結束 -->
-
-
-        <div class="Main">
-            <!-------------------------------- ColumnBlock8 -------------------------------->
-            <!-- Artists -->
-            <div class="ColumnBlock8">
-                <ul>
-                    <!-- 1 -->
-                    <li>
-                        <div class="Line3"></div>
-                    </li>
-
-                    <!-- 2 -->
-                    <li>
-                        <h2> ARTISTS </h2>
-                    </li>
-
-                    <!-- 3 -->
-                    <li>
-                        <div class="Line3"></div>
-                    </li>
-
-                    <!-- 4 -->
-                    <li><img src="./img/Resources/15-1.png" alt=""></li>
-
-                    <!-- 5轉7 -->
-                    <li><img src="./img/Resources/15-2.png" alt=""></li>
-
-                    <!-- 6轉10 -->
-                    <li><img src="./img/Resources/15-3.png" alt=""></li>
-
-                    <!-- 7轉5 -->
-                    <li>
-                        <p>Horikyo.<br><br>Career since 2015.<br><br>- Tradition / Oldschool -</p>
-                    </li>
-
-                    <!-- 8 -->
-                    <li>
-                        <p>Goodolddayz.<br><br>Career since 2012.<br><br>- Black and Grey / Font -</p>
-                    </li>
-
-                    <!-- 9轉11 -->
-                    <li>
-                        <p>BanDai 01.<br><br>Career since 2021.<br><br>- Tradition / Photography -</p>
-                    </li>
-
-                    <!-- 10轉6 -->
-                    <li><a href="./Appointment.html"><button>
-                                <h3> Make an Appointment </h3>
-                            </button></a></li>
-
-                    <!-- 11轉9 -->
-                    <li><a href="./Appointment.html"><button>
-                                <h3> Make an Appointment </h3>
-                            </button></a></li>
-
-                    <!-- 12 -->
-                    <li><a href="./Appointment.html"><button>
-                                <h3> Make an Appointment </h3>
-                            </button></a></li>
-                </ul>
-            </div>
-
-            <!-------------------------------- ColumnBlock9 -------------------------------->
-            <!-- Case Studies -->
-            <div class="ColumnBlock9">
-                <ul>
-                    <li>
-                        <div class="Line3"></div>
-                    </li>
-                    <li>
-                        <h2> CASE STUDIES </h2>
-                    </li>
-                    <li>
-                        <div class="Line3"></div>
-                    </li>
-                    <li><img src="./img/Font/1-1.jpg" alt=""></li>
-                    <li><img src="./img/Font/1-2.jpg" alt=""></li>
-                    <li><img src="./img/Font/1-3.jpg" alt=""></li>
-                    <li></li>
-                    <li>
-                        <p>GGG.<br><br>GanGreenGang Squad.<br><br>50 x 150 (mm)</p>
-                    </li>
-                    <li></li>
-                    <li></li>
-                    <li>
-                        <a href="./CaseStudies.html"><button>
-                                <h3> SEE MORE </h3>
-                            </button></a>
-                    </li>
-                    <li></li>
-                </ul>
-            </div>
-
-            <!-------------------------------- ColumnBlock10 -------------------------------->
-            <!-- Accessories -->
-            <div class="ColumnBlock10">
-                <ul>
-                    <li>
-                        <div class="Line3"></div>
-                    </li>
-                    <li>
-                        <h2> ACCESSORIES </h2>
-                    </li>
-                    <li>
-                        <div class="Line3"></div>
-                    </li>
-                    <li></li>
-                    <li><img src="./img/Accessories/133658445_1033546017144018_6298764997500536372_n.jpg" alt=""></li>
-                    <li></li>
-                    <li></li>
-                    <li>
-                        <p>Goodolddayz 刺青手稿<br><br>545 x 393 (mm)<br><br>$1000 (NT)</p>
-                    </li>
-                    <li></li>
-                    <li></li>
-                    <li>
-                        <a href="./Accessories.html"><button>
-                                <h3> SEE MORE </h3>
-                            </button></a>
-                    </li>
-                    <li></li>
-                </ul>
-            </div>
-
+        <!-------------------------------- ColumnBlock9 -------------------------------->
+        <!-- Case Studies -->
+        <div class="ColumnBlock9">
+          <ul>
+            <li>
+              <div class="Line3"></div>
+            </li>
+            <li>
+              <h2>CASE STUDIES</h2>
+            </li>
+            <li>
+              <div class="Line3"></div>
+            </li>
+            <li><img src="./img/Font/1-1.jpg" alt="" /></li>
+            <li><img src="./img/Font/1-2.jpg" alt="" /></li>
+            <li><img src="./img/Font/1-3.jpg" alt="" /></li>
+            <li></li>
+            <li>
+              <p>GGG.<br /><br />GanGreenGang Squad.<br /><br />50 x 150 (mm)</p>
+            </li>
+            <li></li>
+            <li></li>
+            <li>
+              <a href="./CaseStudies.html"
+                ><button>
+                  <h3>SEE MORE</h3>
+                </button></a
+              >
+            </li>
+            <li></li>
+          </ul>
         </div>
 
-        <!-------------------------------- Footer -------------------------------->
-        <footer>
-            <div class="Footerblock">
+        <!-------------------------------- ColumnBlock10 -------------------------------->
+        <!-- Accessories -->
+        <div class="ColumnBlock10">
+          <ul>
+            <li>
+              <div class="Line3"></div>
+            </li>
+            <li>
+              <h2>ACCESSORIES</h2>
+            </li>
+            <li>
+              <div class="Line3"></div>
+            </li>
+            <li></li>
+            <li><img src="./img/Accessories/133658445_1033546017144018_6298764997500536372_n.jpg" alt="" /></li>
+            <li></li>
+            <li></li>
+            <li>
+              <p>Goodolddayz 刺青手稿<br /><br />545 x 393 (mm)<br /><br />$1000 (NT)</p>
+            </li>
+            <li></li>
+            <li></li>
+            <li>
+              <a href="./Accessories.html"
+                ><button>
+                  <h3>SEE MORE</h3>
+                </button></a
+              >
+            </li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
 
-                <!-------------------------------- Footer1 -------------------------------->
-                <div class="Footer1">
-                    <h2> Contact Us
-                        <a href="https://www.facebook.com/goodolddayzinc"><i class="fab fa-facebook-square"></i></a>
-                        <a href="https://www.instagram.com/goodolddayz.inc/"><i class="fab fa-instagram-square"></i></a>
-                    </h2>
-                    <div class="Line1"></div>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;營業時間24小時/ 7天</p>
-                    <h3>台北市中正區晉江街28號B1</h3>
-                </div>
+      <!-------------------------------- Footer -------------------------------->
+      <footer>
+        <div class="Footerblock">
+          <!-------------------------------- Footer1 -------------------------------->
+          <div class="Footer1">
+            <h2>
+              Contact Us
+              <a href="https://www.facebook.com/goodolddayzinc"><i class="fab fa-facebook-square"></i></a>
+              <a href="https://www.instagram.com/goodolddayz.inc/"><i class="fab fa-instagram-square"></i></a>
+            </h2>
+            <div class="Line1"></div>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;營業時間24小時/ 7天</p>
+            <h3>台北市中正區晉江街28號B1</h3>
+          </div>
 
-                <!-------------------------------- Footer2 -------------------------------->
-                <div class="Footer2">
-                    <div class="Nav2">
-                        <ul>
-                            <li>
-                                <a href="Category.html"> Category </a>
-                            </li>
+          <!-------------------------------- Footer2 -------------------------------->
+          <div class="Footer2">
+            <div class="Nav2">
+              <ul>
+                <li>
+                  <a href="Category.html"> Category </a>
+                </li>
 
-                            <li>
-                                <a href="AboutUs.html"> About Us </a>
-                            </li>
+                <li>
+                  <a href="AboutUs.html"> About Us </a>
+                </li>
 
-                            <li>
-                                <a href="Artists.html"> Artists </a>
-                            </li>
+                <li>
+                  <a href="Artists.html"> Artists </a>
+                </li>
 
-                            <li>
-                                <a href="CaseStudies.html"> Case Studies </a>
-                            </li>
+                <li>
+                  <a href="CaseStudies.html"> Case Studies </a>
+                </li>
 
-                            <li>
-                                <a href="Accessories.html"> Accessories </a>
-                            </li>
+                <li>
+                  <a href="Accessories.html"> Accessories </a>
+                </li>
 
-                            <li>
-                                <a href="Appointment.html"> Appointment </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="iiframe">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1807.6242630115119!2d121.5208662440875!3d25.02563861936392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a990a417a28d%3A0x3f6316533fee6eea!2zMTAw5Y-w5YyX5biC5Lit5q2j5Y2A5pmJ5rGf6KGXMTjlt7cyOOiZn2Ix!5e0!3m2!1szh-TW!2stw!4v1643766097313!5m2!1szh-TW!2stw"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-
-                </div>
-                <!-------------------------------- Footer3 -------------------------------->
-                <div class="Footer3">
-                    <div class="Line2"></div>
-                    <p>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。</p>
-                </div>
-
+                <li>
+                  <a href="Appointment.html"> Appointment </a>
+                </li>
+              </ul>
             </div>
-        </footer>
 
+            <div class="iiframe">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1807.6242630115119!2d121.5208662440875!3d25.02563861936392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a990a417a28d%3A0x3f6316533fee6eea!2zMTAw5Y-w5YyX5biC5Lit5q2j5Y2A5pmJ5rGf6KGXMTjlt7cyOOiZn2Ix!5e0!3m2!1szh-TW!2stw!4v1643766097313!5m2!1szh-TW!2stw" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+          <!-------------------------------- Footer3 -------------------------------->
+          <div class="Footer3">
+            <div class="Line2"></div>
+            <p>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。</p>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <!-- <video id="indexBannerVideo" src="./img/video/123.mp4" autoplay="" loop="" muted="" playsinline="" type="video/mp4">
         </video> -->
 
-
-
     <!-------------------------------- Font Awesome for icons -------------------------------->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> -->
-
 
     <!-- 刺青開始 -->
     <script type="text/javascript" src="https://renewal.yuskin.co.jp/common/js/vendor.js"></script>
@@ -388,211 +398,206 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
     <script src="./tattoo_arms.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
-
-            $('.recipe').slick({
+      $(document).ready(function () {
+        $(".recipe").slick({
+          centerMode: true,
+          centerPadding: "0",
+          slidesToShow: 5,
+          // autoplay: true,
+          // autoplaySpeed: 2000,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
                 centerMode: true,
-                centerPadding: '0',
-                slidesToShow: 5,
-                // autoplay: true,
-                // autoplaySpeed: 2000,
-                responsive: [
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            arrows: false,
-                            centerMode: true,
-                            centerPadding: '0px',
-                            slidesToShow: 3,
-                            autoplay: true,
-                            autoplaySpeed: 3000
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            arrows: false,
-                            centerMode: true,
-                            centerPadding: '0px',
-                            slidesToShow: 3,
-                            autoplay: true,
-                            autoplaySpeed: 3000
-                        }
-                    }
-                ]
-            });
-
+                centerPadding: "0px",
+                slidesToShow: 3,
+                autoplay: true,
+                autoplaySpeed: 3000,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "0px",
+                slidesToShow: 3,
+                autoplay: true,
+                autoplaySpeed: 3000,
+              },
+            },
+          ],
         });
-
+      });
     </script>
 
     <!-- ---換圖的--- -->
     <script>
-        var jarpro = [
-            {
-                tt: './img/Arms/1.png',
-                tt_jam: './img/Arms/SourcesBar/4-2-1.png',
-                // tt_bake:'img/toastbake.png',
-                // tt_bake_jam:'img/toastbake_jam01.png',
+      var jarpro = [
+        {
+          tt: "./img/Arms/1.png",
+          tt_jam: "./img/Arms/SourcesBar/4-2-1.png",
+          // tt_bake:'img/toastbake.png',
+          // tt_bake_jam:'img/toastbake_jam01.png',
 
-                tt_mb: './img/Arms/SourcesBar/4-2-1.png',
-                tt_jam_mb: './img/Arms/SourcesBar/4-2-1.png',
-                // tt_bake_mb:'img/toastbake_mb.png',
-                // tt_bake_jam_mb:'img/toastbake_jam01_mb.png',
+          tt_mb: "./img/Arms/SourcesBar/4-2-1.png",
+          tt_jam_mb: "./img/Arms/SourcesBar/4-2-1.png",
+          // tt_bake_mb:'img/toastbake_mb.png',
+          // tt_bake_jam_mb:'img/toastbake_jam01_mb.png',
 
-                // tit:'��㕑�𤘪�𣈯��',
-                // in:'��𣈯�祆�𣂼�嚗朞�㕑�瓐���蒾��蝟硔��瑼豢狀��憭拍�嗆�烐�䀹�𡏭��'
-            },
-            // {
-            //     tt:'img/toast.png',
-            //     tt_jam:'img/toast_jam02.png',
-            //     tt_bake:'img/toastbake.png',
-            //     tt_bake_jam:'img/toastbake_jam02.png',
+          // tit:'��㕑�𤘪�𣈯��',
+          // in:'��𣈯�祆�𣂼�嚗朞�㕑�瓐���蒾��蝟硔��瑼豢狀��憭拍�嗆�烐�䀹�𡏭��'
+        },
+        // {
+        //     tt:'img/toast.png',
+        //     tt_jam:'img/toast_jam02.png',
+        //     tt_bake:'img/toastbake.png',
+        //     tt_bake_jam:'img/toastbake_jam02.png',
 
-            //     tt_mb:'img/toast_mb.png',
-            //     tt_jam_mb:'img/toast_jam02_mb.png',
-            //     tt_bake_mb:'img/toastbake_mb.png',
-            //     tt_bake_jam_mb:'img/toastbake_jam02_mb.png',
+        //     tt_mb:'img/toast_mb.png',
+        //     tt_jam_mb:'img/toast_jam02_mb.png',
+        //     tt_bake_mb:'img/toastbake_mb.png',
+        //     tt_bake_jam_mb:'img/toastbake_jam02_mb.png',
 
-            //     tit:'�蓡擐蹱�𨀣�𣈯��',
-            //     in:'��𣈯�祆�𣂼�嚗𡁶蓡擐蹱�栶���蒾��蝟硔��瑼豢狀��憭拍�嗆�烐�䀹�𡏭��'
-            // },
-            // {
-            //     tt:'img/toast.png',
-            //     tt_jam:'img/toast_jam12.png',
-            //     tt_bake:'img/toastbake.png',
-            //     tt_bake_jam:'img/toastbake_jam12.png',
+        //     tit:'�蓡擐蹱�𨀣�𣈯��',
+        //     in:'��𣈯�祆�𣂼�嚗𡁶蓡擐蹱�栶���蒾��蝟硔��瑼豢狀��憭拍�嗆�烐�䀹�𡏭��'
+        // },
+        // {
+        //     tt:'img/toast.png',
+        //     tt_jam:'img/toast_jam12.png',
+        //     tt_bake:'img/toastbake.png',
+        //     tt_bake_jam:'img/toastbake_jam12.png',
 
-            //     tt_mb:'img/toast_mb.png',
-            //     tt_jam_mb:'img/toast_jam12_mb.png',
-            //     tt_bake_mb:'img/toastbake_mb.png',
-            //     tt_bake_jam_mb:'img/toastbake_jam12_mb.png',
+        //     tt_mb:'img/toast_mb.png',
+        //     tt_jam_mb:'img/toast_jam12_mb.png',
+        //     tt_bake_mb:'img/toastbake_mb.png',
+        //     tt_bake_jam_mb:'img/toastbake_jam12_mb.png',
 
-            //     tit:'��𧢲�𡏭�𠰴���𣈯��',
-            //     in:'��𣈯�祆�𣂼�嚗朞�𧢲�栶����𠰴����蒾��蝟硔��瑼豢狀��憭拍�嗆�烐�䀹�𡏭��'
-            // },
-            // {
-            //     tt:'img/toast.png',
-            //     tt_jam:'img/toast_jam03.png',
-            //     tt_bake:'img/toastbake.png',
-            //     tt_bake_jam:'img/toastbake_jam03.png',
+        //     tit:'��𧢲�𡏭�𠰴���𣈯��',
+        //     in:'��𣈯�祆�𣂼�嚗朞�𧢲�栶����𠰴����蒾��蝟硔��瑼豢狀��憭拍�嗆�烐�䀹�𡏭��'
+        // },
+        // {
+        //     tt:'img/toast.png',
+        //     tt_jam:'img/toast_jam03.png',
+        //     tt_bake:'img/toastbake.png',
+        //     tt_bake_jam:'img/toastbake_jam03.png',
 
-            //     tt_mb:'img/toast_mb.png',
-            //     tt_jam_mb:'img/toast_jam03_mb.png',
-            //     tt_bake_mb:'img/toastbake_mb.png',
-            //     tt_bake_jam_mb:'img/toastbake_jam03_mb.png',
+        //     tt_mb:'img/toast_mb.png',
+        //     tt_jam_mb:'img/toast_jam03_mb.png',
+        //     tt_bake_mb:'img/toastbake_mb.png',
+        //     tt_bake_jam_mb:'img/toastbake_jam03_mb.png',
 
-            //     tit:'憟�㺭��𨀣�𣈯��',
-            //     in:'��𣈯�祆�𣂼�嚗𡁜��㺭��栶���蒾��蝟硔��瑼豢狀��憭拍�嗆�烐�䀹�𡏭��'
-            // },
-            // {
-            //     tt:'img/toast.png',
-            //     tt_jam:'img/toast_jam08.png',
-            //     tt_bake:'img/toastbake.png',
-            //     tt_bake_jam:'img/toastbake_jam08.png',
+        //     tit:'憟�㺭��𨀣�𣈯��',
+        //     in:'��𣈯�祆�𣂼�嚗𡁜��㺭��栶���蒾��蝟硔��瑼豢狀��憭拍�嗆�烐�䀹�𡏭��'
+        // },
+        // {
+        //     tt:'img/toast.png',
+        //     tt_jam:'img/toast_jam08.png',
+        //     tt_bake:'img/toastbake.png',
+        //     tt_bake_jam:'img/toastbake_jam08.png',
 
-            //     tt_mb:'img/toast_mb.png',
-            //     tt_jam_mb:'img/toast_jam08_mb.png',
-            //     tt_bake_mb:'img/toastbake_mb.png',
-            //     tt_bake_jam_mb:'img/toastbake_jam08_mb.png',
+        //     tt_mb:'img/toast_mb.png',
+        //     tt_jam_mb:'img/toast_jam08_mb.png',
+        //     tt_bake_mb:'img/toastbake_mb.png',
+        //     tt_bake_jam_mb:'img/toastbake_jam08_mb.png',
 
-            //     tit:'獢烐允��𣈯��',
-            //     in:'��𣈯�祆�𣂼�嚗𡁏�烐允���蒾��蝟硔��瑼豢狀��憭拍�嗆�烐�䀹�𡏭��'
-            // },
-            // {
-            //     tt:'img/toast.png',
-            //     tt_jam:'img/toast_jam04.png',
-            //     tt_bake:'img/toastbake.png',
-            //     tt_bake_jam:'img/toastbake_jam04.png',
+        //     tit:'獢烐允��𣈯��',
+        //     in:'��𣈯�祆�𣂼�嚗𡁏�烐允���蒾��蝟硔��瑼豢狀��憭拍�嗆�烐�䀹�𡏭��'
+        // },
+        // {
+        //     tt:'img/toast.png',
+        //     tt_jam:'img/toast_jam04.png',
+        //     tt_bake:'img/toastbake.png',
+        //     tt_bake_jam:'img/toastbake_jam04.png',
 
-            //     tt_mb:'img/toast_mb.png',
-            //     tt_jam_mb:'img/toast_jam04_mb.png',
-            //     tt_bake_mb:'img/toastbake_mb.png',
-            //     tt_bake_jam_mb:'img/toastbake_jam04_mb.png',
+        //     tt_mb:'img/toast_mb.png',
+        //     tt_jam_mb:'img/toast_jam04_mb.png',
+        //     tt_bake_mb:'img/toastbake_mb.png',
+        //     tt_bake_jam_mb:'img/toastbake_jam04_mb.png',
 
-            //     tit:'�𠆩璅���𥕦扒��𣈯��',
-            //     in:'��𣈯�祆�𣂼�嚗朞𠆩璅�����𥕦扒���蒾��蝟硔��瑼豢狀��憭拍�嗆�烐�䀹�𡏭��'
-            // },
-            // {
-            //     tt:'img/toast.png',
-            //     tt_jam:'img/toast_jam10.png',
-            //     tt_bake:'img/toastbake.png',
-            //     tt_bake_jam:'img/toastbake_jam10.png',
+        //     tit:'�𠆩璅���𥕦扒��𣈯��',
+        //     in:'��𣈯�祆�𣂼�嚗朞𠆩璅�����𥕦扒���蒾��蝟硔��瑼豢狀��憭拍�嗆�烐�䀹�𡏭��'
+        // },
+        // {
+        //     tt:'img/toast.png',
+        //     tt_jam:'img/toast_jam10.png',
+        //     tt_bake:'img/toastbake.png',
+        //     tt_bake_jam:'img/toastbake_jam10.png',
 
-            //     tt_mb:'img/toast_mb.png',
-            //     tt_jam_mb:'img/toast_jam10_mb.png',
-            //     tt_bake_mb:'img/toastbake_mb.png',
-            //     tt_bake_jam_mb:'img/toastbake_jam10_mb.png',
+        //     tt_mb:'img/toast_mb.png',
+        //     tt_jam_mb:'img/toast_jam10_mb.png',
+        //     tt_bake_mb:'img/toastbake_mb.png',
+        //     tt_bake_jam_mb:'img/toastbake_jam10_mb.png',
 
-            //     tit:'��埝�𣈯陶璇冽�𣈯��',
-            //     in:'��𣈯�祆�𣂼�嚗朞�埝�栶��曈單◢���蒾��蝟硔��瑼豢狀��憭拍�嗆�烐�䀹�𡏭��'
-            // },
-            // {
-            //     tt:'img/toast.png',
-            //     tt_jam:'img/toast_jam07.png',
-            //     tt_bake:'img/toastbake.png',
-            //     tt_bake_jam:'img/toastbake_jam07.png',
+        //     tit:'��埝�𣈯陶璇冽�𣈯��',
+        //     in:'��𣈯�祆�𣂼�嚗朞�埝�栶��曈單◢���蒾��蝟硔��瑼豢狀��憭拍�嗆�烐�䀹�𡏭��'
+        // },
+        // {
+        //     tt:'img/toast.png',
+        //     tt_jam:'img/toast_jam07.png',
+        //     tt_bake:'img/toastbake.png',
+        //     tt_bake_jam:'img/toastbake_jam07.png',
 
-            //     tt_mb:'img/toast_mb.png',
-            //     tt_jam_mb:'img/toast_jam07_mb.png',
-            //     tt_bake_mb:'img/toastbake_mb.png',
-            //     tt_bake_jam_mb:'img/toastbake_jam07_mb.png',
+        //     tt_mb:'img/toast_mb.png',
+        //     tt_jam_mb:'img/toast_jam07_mb.png',
+        //     tt_bake_mb:'img/toastbake_mb.png',
+        //     tt_bake_jam_mb:'img/toastbake_jam07_mb.png',
 
-            //     tit:'��𧢲�𨀣�烐�䀹�𣈯��',
-            //     in:'��𣈯�祆�𣂼�嚗朞�𧢲�栶��璈睃�僐���蒾��蝟硔��瑼豢狀��憭拍�嗆�烐�䀹�𡏭��'
-            // },
-            // {
-            //     tt:'img/toast.png',
-            //     tt_jam:'img/toast_jam09.png',
-            //     tt_bake:'img/toastbake.png',
-            //     tt_bake_jam:'img/toastbake_jam09.png',
+        //     tit:'��𧢲�𨀣�烐�䀹�𣈯��',
+        //     in:'��𣈯�祆�𣂼�嚗朞�𧢲�栶��璈睃�僐���蒾��蝟硔��瑼豢狀��憭拍�嗆�烐�䀹�𡏭��'
+        // },
+        // {
+        //     tt:'img/toast.png',
+        //     tt_jam:'img/toast_jam09.png',
+        //     tt_bake:'img/toastbake.png',
+        //     tt_bake_jam:'img/toastbake_jam09.png',
 
-            //     tt_mb:'img/toast_mb.png',
-            //     tt_jam_mb:'img/toast_jam09_mb.png',
-            //     tt_bake_mb:'img/toastbake_mb.png',
-            //     tt_bake_jam_mb:'img/toastbake_jam09_mb.png',
+        //     tt_mb:'img/toast_mb.png',
+        //     tt_jam_mb:'img/toast_jam09_mb.png',
+        //     tt_bake_mb:'img/toastbake_mb.png',
+        //     tt_bake_jam_mb:'img/toastbake_jam09_mb.png',
 
-            //     tit:'��滩�𤘪�𣈯��',
-            //     in:'��𣈯�祆�𣂼�嚗朞�滩�瓐���蒾��蝟硔��瑼豢狀��憭拍�嗆�烐�䀹�𡏭��'
-            // },
-            // {
-            //     tt:'img/toast.png',
-            //     tt_jam:'img/toast_jam13.png',
-            //     tt_bake:'img/toastbake.png',
-            //     tt_bake_jam:'img/toastbake_jam13.png',
+        //     tit:'��滩�𤘪�𣈯��',
+        //     in:'��𣈯�祆�𣂼�嚗朞�滩�瓐���蒾��蝟硔��瑼豢狀��憭拍�嗆�烐�䀹�𡏭��'
+        // },
+        // {
+        //     tt:'img/toast.png',
+        //     tt_jam:'img/toast_jam13.png',
+        //     tt_bake:'img/toastbake.png',
+        //     tt_bake_jam:'img/toastbake_jam13.png',
 
-            //     tt_mb:'img/toast_mb.png',
-            //     tt_jam_mb:'img/toast_jam13_mb.png',
-            //     tt_bake_mb:'img/toastbake_mb.png',
-            //     tt_bake_jam_mb:'img/toastbake_jam13_mb.png',
+        //     tt_mb:'img/toast_mb.png',
+        //     tt_jam_mb:'img/toast_jam13_mb.png',
+        //     tt_bake_mb:'img/toastbake_mb.png',
+        //     tt_bake_jam_mb:'img/toastbake_jam13_mb.png',
 
-            //     tit:'蝝�樴齿�𨀣�𣈯��',
-            //     in:'��𣈯�祆�𣂼�嚗𡁶�樴齿�栶���蒾��蝟硔��瑼豢狀��憭拍�嗆�烐�䀹�𡏭��'
-            // },
-        ];
+        //     tit:'蝝�樴齿�𨀣�𣈯��',
+        //     in:'��𣈯�祆�𣂼�嚗𡁶�樴齿�栶���蒾��蝟硔��瑼豢狀��憭拍�嗆�烐�䀹�𡏭��'
+        // },
+      ];
     </script>
 
     <!-------------------------------- Slidein -------------------------------->
     <script>
-        let slogan = document.getElementsByClassName('js-slide');
+      let slogan = document.getElementsByClassName("js-slide");
 
-        function doScroll() {
-            // Y軸高度
-            let aa = window.pageYOffset;
-            for (let i = 0; i < slogan.length; i++) {
-                if (aa > slogan[i].offsetTop / 100) {
-                    slogan[i].classList.add('js-active');
-                } else {
-                    slogan[i].classList.remove('js-active');
-                }
-            }
+      function doScroll() {
+        // Y軸高度
+        let aa = window.pageYOffset;
+        for (let i = 0; i < slogan.length; i++) {
+          if (aa > slogan[i].offsetTop / 100) {
+            slogan[i].classList.add("js-active");
+          } else {
+            slogan[i].classList.remove("js-active");
+          }
         }
-        window.addEventListener('scroll', doScroll);
+      }
+      window.addEventListener("scroll", doScroll);
 
-        $(".js-active").css("transition-delay", ".1s");
-
+      $(".js-active").css("transition-delay", ".1s");
     </script>
-
 
     <!-------------------------------- FullPage -------------------------------->
     <!-- <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
@@ -602,8 +607,5 @@
                 $('#fullpage').fullpage();
             });
         </script> -->
-
-
-</body>
-
+  </body>
 </html>
