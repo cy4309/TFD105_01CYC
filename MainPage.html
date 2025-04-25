@@ -446,9 +446,11 @@
       window.addEventListener("load", resetSlider);
       window.addEventListener("resize", resetSlider);
 
-      sliderHandle.addEventListener("mousedown", () => {
+      // 滑鼠事件
+      sliderHandle.addEventListener("mousedown", (e) => {
         isDragging = true;
         sliderHandle.classList.add("dragging");
+        e.preventDefault(); // 防止觸控滾動
       });
 
       document.addEventListener("mouseup", () => {
@@ -460,6 +462,26 @@
         if (!isDragging) return;
         const rect = sliderContainer.getBoundingClientRect();
         let x = e.clientX - rect.left;
+        x = Math.max(0, Math.min(x, rect.width));
+        setClip(x);
+      });
+
+      // 手機觸控事件
+      sliderHandle.addEventListener("touchstart", (e) => {
+        isDragging = true;
+        sliderHandle.classList.add("dragging");
+        e.preventDefault(); // 防止觸控滾動
+      });
+
+      document.addEventListener("touchend", () => {
+        isDragging = false;
+        sliderHandle.classList.remove("dragging");
+      });
+
+      document.addEventListener("touchmove", (e) => {
+        if (!isDragging) return;
+        const rect = sliderContainer.getBoundingClientRect();
+        let x = e.touches[0].clientX - rect.left; // 使用 touches[0] 取得第一個觸控點
         x = Math.max(0, Math.min(x, rect.width));
         setClip(x);
       });
